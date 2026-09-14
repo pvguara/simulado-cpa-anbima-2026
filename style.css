@@ -166,6 +166,7 @@ a { color: var(--color-primary); }
   color: var(--color-primary);
   border: 1px solid var(--color-divider);
 }
+.timer[hidden] { display: none; }
 .timer.timer--warning { background: var(--color-warning-highlight); color: var(--color-warning); }
 .timer.timer--danger { background: var(--color-error-highlight); color: var(--color-error); animation: pulse 1.4s infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .55; } }
@@ -248,7 +249,11 @@ main#app { max-width: var(--content-wide); margin: 0 auto; padding: var(--space-
 
 /* ============ EXAM SCREEN ============ */
 .exam-layout { display: grid; grid-template-columns: 1fr 260px; gap: var(--space-8); align-items: start; }
-@media (max-width: 860px) { .exam-layout { grid-template-columns: 1fr; } .exam-nav { order: -1; } }
+@media (max-width: 860px) {
+  .exam-layout { grid-template-columns: 1fr; }
+  .exam-nav { position: static; max-height: none; }
+  .nav-grid { grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); }
+}
 
 .progress-bar { height: 6px; border-radius: var(--radius-full); background: var(--color-surface-offset); overflow: hidden; margin-bottom: var(--space-6); }
 .progress-bar__fill { height: 100%; background: var(--color-primary); border-radius: var(--radius-full); transition: width .25s ease; }

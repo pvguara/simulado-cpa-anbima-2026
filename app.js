@@ -17,7 +17,7 @@
   })();
 
   /* ---------------- DATA ---------------- */
-  var DATA = JSON.parse(document.getElementById('questions-data').textContent);
+  var DATA = window.CPA_DATA;
   var MCQ = DATA.mcq.map(function (q, i) { return Object.assign({}, q, { type: 'mcq', id: 'm' + i, num: i + 1 }); });
   var TREES = DATA.trees.map(function (q, i) { return Object.assign({}, q, { type: 'tree', id: 't' + i, num: MCQ.length + i + 1 }); });
   var QUESTIONS = MCQ.concat(TREES);
