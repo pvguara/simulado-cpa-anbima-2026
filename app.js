@@ -16,12 +16,81 @@
     t.addEventListener('click', function () { d = d === 'dark' ? 'light' : 'dark'; paint(); });
   })();
 
-  /* ---------------- DATA ---------------- */
-  var DATA = window.CPA_DATA;
-  var MCQ = DATA.mcq.map(function (q, i) { return Object.assign({}, q, { type: 'mcq', id: 'm' + i, num: i + 1 }); });
-  var TREES = DATA.trees.map(function (q, i) { return Object.assign({}, q, { type: 'tree', id: 't' + i, num: MCQ.length + i + 1 }); });
-  var QUESTIONS = MCQ.concat(TREES);
-  var TOTAL = QUESTIONS.length;
+  /* ---------------- DATA / RANDOM SAMPLING ---------------- */
+  var POOL = window.CPA_POOL;
+
+  var MCQ_SAMPLE_COUNTS = {
+    'Sistema Financeiro Nacional': 10,
+    'Produtos do mercado financeiro': 16,
+    'Relacionamento com o cliente': 9,
+    'Inovação e desenvolvimento de mercado': 5,
+  };
+  var TREE_SAMPLE_COUNTS = {
+    'Produtos do mercado financeiro': 4,
+    'Relacionamento com o cliente': 6,
+  };
+
+  function shuffleArr(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  function sampleByTheme(pool, counts) {
+    var result = [];
+    Object.keys(counts).forEach(function (theme) {
+      var group = pool.filter(function (x) { return x.theme === theme; });
+      result = result.concat(shuffleArr(group).slice(0, counts[theme]));
+    });
+    return result;
+  }
+
+  function shuffleMcqOptions(q) {
+    var order = shuffleArr(q.options.map(function (_, i) { return i; }));
+    var newOptions = order.map(function (i) { return q.options[i]; });
+    return Object.assign({}, q, { options: newOptions, correct: order.indexOf(q.correct) });
+  }
+
+  function shuffleTreeSteps(t) {
+    var newSteps = t.steps.map(function (step) {
+      return Object.assign({}, step, { options: shuffleArr(step.options) });
+    });
+    return Object.assign({}, t, { steps: newSteps });
+  }
+
+  function buildExamData() {
+    var mcqSample = shuffleArr(sampleByTheme(POOL.mcq, MCQ_SAMPLE_COUNTS).map(shuffleMcqOptions));
+    var treeSample = shuffleArr(sampleByTheme(POOL.trees, TREE_SAMPLE_COUNTS).map(shuffleTreeSteps));
+    return { meta: POOL.meta, mcq: mcqSample, trees: treeSample };
+  }
+
+  var DATA, MCQ, TREES, QUESTIONS, TOTAL;
+
+  function loadExam() {
+    DATA = buildExamData();
+    MCQ = DATA.mcq.map(function (q, i) { return Object.assign({}, q, { type: 'mcq', id: 'm' + i, num: i + 1 }); });
+    TREES = DATA.trees.map(function (q, i) { return Object.assign({}, q, { type: 'tree', id: 't' + i, num: MCQ.length + i + 1 }); });
+    QUESTIONS = MCQ.concat(TREES);
+    TOTAL = QUESTIONS.length;
+
+    state.current = 0;
+    state.mcqAnswers = {};
+    state.treeAnswers = {};
+    state.treePointer = {};
+    state.flags = {};
+    state.timeLeftSec = DATA.meta.duration_minutes * 60;
+    state.reviewFilter = 'all';
+
+    QUESTIONS.forEach(function (q) {
+      if (q.type === 'tree') {
+        state.treeAnswers[q.id] = new Array(q.steps.length).fill(null);
+        state.treePointer[q.id] = 0;
+      }
+    });
+  }
 
   var THEME_ORDER = [
     'Sistema Financeiro Nacional',
@@ -44,19 +113,14 @@
     treeAnswers: {},     // id -> array of selected option index per step (null = unanswered)
     treePointer: {},     // id -> which step is currently displayed
     flags: {},           // id -> bool
-    timeLeftSec: DATA.meta.duration_minutes * 60,
+    timeLeftSec: 0,
     timerHandle: null,
     startedAt: null,
     finishedAt: null,
     reviewFilter: 'all', // all | wrong | theme name
   };
 
-  QUESTIONS.forEach(function (q) {
-    if (q.type === 'tree') {
-      state.treeAnswers[q.id] = new Array(q.steps.length).fill(null);
-      state.treePointer[q.id] = 0;
-    }
-  });
+  loadExam(); // draw the first random 40 MCQ + 10 árvore set from the pool
 
   var app = document.getElementById('app');
 
@@ -121,9 +185,9 @@
 
   /* ================= EXAM FLOW ================= */
   function startExam() {
+    loadExam(); // sorteia um novo conjunto de 40 questões + 10 árvores do banco para esta tentativa
     state.screen = 'exam';
     state.startedAt = Date.now();
-    state.current = 0;
     document.getElementById('timer').hidden = false;
     startTimer();
     renderExam();
