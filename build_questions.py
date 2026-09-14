@@ -789,6 +789,25 @@ def counts_by_theme(items, key_theme="theme"):
         out[it[key_theme]] = out.get(it[key_theme], 0) + 1
     return out
 
+# Shuffle option order so correct answers aren't always the first listed
+# (deterministic seed keeps regeneration reproducible).
+import random
+random.seed(42)
+
+for q in MCQ:
+    n = len(q["options"])
+    order = list(range(n))
+    random.shuffle(order)
+    q["options"] = [q["options"][i] for i in order]
+    q["correct"] = order.index(q["correct"])
+
+for t in TREES:
+    for s in t["steps"]:
+        n = len(s["options"])
+        order = list(range(n))
+        random.shuffle(order)
+        s["options"] = [s["options"][i] for i in order]
+
 mcq_counts = counts_by_theme(MCQ)
 tree_counts = counts_by_theme(TREES)
 
@@ -816,6 +835,11 @@ data = {
 
 with open("data/questions.json", "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
+
+with open("data.js", "w", encoding="utf-8") as f:
+    f.write("window.CPA_DATA = ")
+    json.dump(data, f, ensure_ascii=False)
+    f.write(";\n")
 
 print("MCQ:", len(MCQ), mcq_counts)
 print("Trees:", len(TREES), tree_counts)
