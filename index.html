@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simulado CPA — Certificado Profissional ANBIMA</title>
+<meta name="description" content="Simulado interativo da nova certificação CPA da ANBIMA (formato 2026): 40 questões de múltipla escolha contextualizadas e 10 questões interativas de árvore de decisão, com cronômetro de 2h30 e gabarito comentado." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%230b3d4c%22/><path d=%22M8 22V10l8 7 8-7v12%22 stroke=%22%23e3b23c%22 stroke-width=%222.4%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="app-header">
+  <div class="app-header__inner">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-label="Logo do simulado CPA" role="img">
+        <rect width="32" height="32" rx="7" fill="var(--color-primary)"/>
+        <path d="M8 22V10l8 7 8-7v12" stroke="var(--color-gold)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="brand__text">
+        <strong>Simulado CPA</strong>
+        <span>Certificado Profissional ANBIMA · formato 2026</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div id="timer" class="timer" hidden>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <span id="timer-text">2:30:00</span>
+      </div>
+      <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema" data-theme-toggle></button>
+    </div>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="app-footer">
+  <p>Simulado de estudo, não afiliado à ANBIMA. Estrutura, temas e critérios de aprovação seguem os documentos oficiais publicados pela ANBIMA para a nova certificação CPA, vigente a partir de janeiro de 2026.</p>
+</footer>
+
+<script src="data/questions.json" type="application/json" id="questions-data"></script>
+<script src="app.js"></script>
+</body>
+</html>
