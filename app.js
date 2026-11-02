@@ -81,7 +81,11 @@
     state.treeAnswers = {};
     state.treePointer = {};
     state.flags = {};
-    state.timeLeftSec = DATA.meta.duration_minutes * 60;
+    state.timeLeftSec = state.durationMinutes * 60;
+    state.notes = '';
+    state.calcExpression = '';
+    state.finishedAt = null;
+    state.deadline = null;
     state.reviewFilter = 'all';
 
     QUESTIONS.forEach(function (q) {
@@ -118,13 +122,44 @@
     startedAt: null,
     finishedAt: null,
     reviewFilter: 'all', // all | wrong | theme name
+    mode: 'real',
+    durationMinutes: 150,
+    deadline: null,
+    notes: '',
+    calcExpression: '',
   };
 
   loadExam(); // draw the first random 40 MCQ + 10 árvore set from the pool
 
   var app = document.getElementById('app');
 
-  function esc(s) { return String(s); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+
+  var overlay = document.getElementById('app-dialog');
+  var overlayReturnFocus;
+  function closeDialog() {
+    overlay.close();
+    if (overlayReturnFocus && overlayReturnFocus.isConnected) overlayReturnFocus.focus();
+  }
+  function showDialog(title, html, wire) {
+    if (overlay.open) overlay.close();
+    overlayReturnFocus = document.activeElement;
+    overlay.innerHTML = '<div class="dialog-heading"><h2 id="dialog-title">' + title + '</h2><button class="btn btn--secondary btn--sm" id="dialog-close">Fechar</button></div>' + html;
+    overlay.querySelector('#dialog-close').addEventListener('click', closeDialog);
+    overlay.showModal();
+    if (wire) wire();
+  }
+  overlay.addEventListener('cancel', function (e) { e.preventDefault(); closeDialog(); });
+  function ask(title, message, label, action) {
+    showDialog(title, '<p>' + esc(message) + '</p><div class="cta-row"><button class="btn btn--secondary" id="dialog-cancel">Cancelar</button><button class="btn" id="dialog-confirm">' + label + '</button></div>', function () {
+      overlay.querySelector('#dialog-cancel').addEventListener('click', closeDialog);
+      overlay.querySelector('#dialog-confirm').addEventListener('click', function () {
+        closeDialog();
+        if (state.screen !== 'results' || title === 'Nova tentativa') action();
+      });
+      overlay.querySelector('#dialog-cancel').focus();
+    });
+  }
 
   /* ================= START SCREEN ================= */
   function renderStart() {
@@ -144,16 +179,27 @@
     app.innerHTML = '' +
       '<section class="hero">' +
         '<div>' +
-          '<div class="hero__eyebrow">Simulado · Formato oficial 2026</div>' +
-          '<h1>' + DATA.meta.title + '</h1>' +
-          '<p class="hero__sub">' + DATA.meta.subtitle + ' — reproduzindo a estrutura divulgada pela ANBIMA para a nova certificação CPA (Certificado Profissional ANBIMA), que substitui a CPA-10 a partir de janeiro de 2026.</p>' +
+          '<div class="hero__eyebrow">Simulado independente · CPA 2026</div>' +
+          '<h1>Simulado CPA · Certificação Profissional Anbima de Distribuição</h1>' +
+          '<p class="hero__sub">Treine com 50 questões sorteadas de um banco de 100, cronômetro e gabarito comentado. Escolha entre navegação sequencial para treino de prova e navegação livre para estudo.</p>' +
         '</div>' +
         '<div class="stat-grid">' +
-          '<div class="stat-card"><strong>' + DATA.meta.total_questions + '</strong><span>questões (40 múltipla escolha + 10 árvore de decisão)</span></div>' +
+          '<div class="stat-card"><strong>' + DATA.meta.total_questions + '</strong><span>questões (40 múltipla escolha + 10 árvores de diálogo)</span></div>' +
           '<div class="stat-card"><strong>2h30</strong><span>duração total da prova</span></div>' +
           '<div class="stat-card"><strong>' + DATA.meta.passing_pct + '%</strong><span>mínimo para aprovação (' + DATA.meta.passing_correct + ' acertos)</span></div>' +
           '<div class="stat-card"><strong>4</strong><span>módulos do programa detalhado</span></div>' +
         '</div>' +
+      '</section>' +
+
+      '<section class="card mode-settings" aria-labelledby="mode-title">' +
+        '<h2 id="mode-title">Escolha como praticar</h2>' +
+        '<fieldset class="mode-picker"><legend class="sr-only">Modo do simulado</legend>' +
+          '<label class="mode-choice"><input type="radio" name="exam-mode" value="real" ' + (state.mode === 'real' ? 'checked' : '') + '><span><strong>Prova real</strong><span>Avance sem voltar. Questões anteriores ficam bloqueadas e o gabarito só aparece ao finalizar.</span></span></label>' +
+          '<label class="mode-choice"><input type="radio" name="exam-mode" value="study" ' + (state.mode === 'study' ? 'checked' : '') + '><span><strong>Estudo</strong><span>Navegue livremente, marque para revisão e veja o feedback das árvores durante o treino.</span></span></label>' +
+        '</fieldset>' +
+        '<label class="extra-time"><input type="checkbox" id="extra-time" ' + (state.durationMinutes === 180 ? 'checked' : '') + '>Treinar com 30 minutos adicionais (total de 3h)</label>' +
+        '<p class="q-index">Tempo padrão: 2h30. No exame oficial, tempo adicional depende de solicitação e aprovação das condições especiais; esta seleção apenas configura o treino.</p>' +
+        '<p class="q-index">Referência: edital enviado, versão 1.6, setembro de 2026, itens 8.1 a 8.4. Esta interface não é uma reprodução da plataforma oficial.</p>' +
       '</section>' +
 
       '<div class="card">' +
@@ -164,19 +210,25 @@
       '<div class="card">' +
         '<h2>Como funciona</h2>' +
         '<ul class="rules-list">' +
-          li('São 40 questões de múltipla escolha contextualizadas (situações práticas de atendimento e mercado) e 10 questões interativas em formato de árvore de decisão, com 3 etapas encadeadas cada.') +
-          li('O cronômetro de 2h30 começa a contar assim que você iniciar e é regressivo, exatamente como no exame real — o simulado é enviado automaticamente ao fim do tempo.') +
-          li('Nas questões interativas, cada escolha revela uma consequência imediata antes de avançar para a próxima etapa da situação — simulando o atendimento real ao cliente.') +
-          li('Você pode navegar livremente entre as questões, marcar para revisão e alterar respostas de múltipla escolha até finalizar o simulado.') +
+          li('São 40 questões de múltipla escolha contextualizadas e 10 árvores de diálogo, com 3 etapas cada. Mantivemos o banco pedagógico existente; não são questões oficiais nem novos cases independentes.') +
+          li('O cronômetro inicia ao começar a tentativa e o envio é automático ao acabar o tempo. Calculadora e bloco de notas estão disponíveis sem pausar o relógio.') +
+          li('Em Prova real, ao avançar você bloqueia a questão anterior, mesmo em branco. Nas árvores, a correção fica oculta até o resultado. Em Estudo, continuam disponíveis navegação livre, marcação e feedback imediato.') +
           li('Ao final, você recebe a nota, o resultado (aprovado/reprovado a partir de 70%), o desempenho por módulo e o gabarito comentado de todas as 50 questões.') +
         '</ul>' +
         '<div class="cta-row">' +
           '<button class="btn" id="start-btn">Iniciar simulado</button>' +
-          '<span class="q-index">Tempo estimado: 2h30 · você pode finalizar antes se concluir todas as questões</span>' +
+          '<span class="q-index" id="start-summary">' + (state.durationMinutes === 180 ? '3h com tempo adicional' : '2h30') + ' · 50 questões por tentativa</span>' +
         '</div>' +
       '</div>';
 
     document.getElementById('start-btn').addEventListener('click', startExam);
+    document.querySelectorAll('[name="exam-mode"]').forEach(function (input) {
+      input.addEventListener('change', function () { state.mode = input.value; });
+    });
+    document.getElementById('extra-time').addEventListener('change', function (e) {
+      state.durationMinutes = e.target.checked ? 180 : 150;
+      document.getElementById('start-summary').textContent = (state.durationMinutes === 180 ? '3h com tempo adicional' : '2h30') + ' · 50 questões por tentativa';
+    });
   }
 
   function li(text) {
@@ -188,15 +240,18 @@
     loadExam(); // sorteia um novo conjunto de 40 questões + 10 árvores do banco para esta tentativa
     state.screen = 'exam';
     state.startedAt = Date.now();
+    state.deadline = state.startedAt + state.durationMinutes * 60000;
     document.getElementById('timer').hidden = false;
     startTimer();
     renderExam();
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
   function startTimer() {
+    if (state.timerHandle) clearInterval(state.timerHandle);
     updateTimerText();
     state.timerHandle = setInterval(function () {
-      state.timeLeftSec--;
+      state.timeLeftSec = Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
       updateTimerText();
       if (state.timeLeftSec <= 0) {
         clearInterval(state.timerHandle);
@@ -231,19 +286,21 @@
     var pct = Math.round(((state.current + 1) / TOTAL) * 100);
 
     app.innerHTML = '' +
+      '<div class="exam-toolbar"><span class="tag">' + (state.mode === 'real' ? 'Prova real · sem retorno' : 'Estudo · navegação livre') + '</span><div class="tool-buttons"><button class="btn btn--secondary btn--sm" id="calculator-btn">Calculadora</button><button class="btn btn--secondary btn--sm" id="notes-btn">Bloco de notas</button></div></div>' +
+      (state.mode === 'real' ? '<p class="exam-notice">Ao avançar, a questão atual será bloqueada, mesmo se ficar em branco. O gabarito será exibido apenas após finalizar.</p>' : '') +
       '<div class="progress-bar"><div class="progress-bar__fill" style="width:' + pct + '%"></div></div>' +
       '<div class="exam-layout">' +
         '<div>' +
           '<div class="q-meta">' +
-            '<span class="tag' + (q.type === 'tree' ? ' tag--gold' : '') + '">' + (q.type === 'tree' ? 'Questão interativa · árvore de decisão' : 'Múltipla escolha contextualizada') + '</span>' +
+            '<span class="tag' + (q.type === 'tree' ? ' tag--gold' : '') + '">' + (q.type === 'tree' ? 'Questão interativa · árvore de diálogo' : 'Múltipla escolha contextualizada') + '</span>' +
             '<span class="tag">' + q.theme + '</span>' +
             '<span class="q-index">Questão ' + q.num + ' de ' + TOTAL + '</span>' +
           '</div>' +
           '<div class="q-card" id="q-card"></div>' +
           '<div class="exam-controls">' +
             '<div class="exam-controls-left">' +
-              '<button class="btn btn--secondary btn--sm" id="prev-btn" ' + (state.current === 0 ? 'disabled' : '') + '>← Anterior</button>' +
-              '<button class="flag-btn' + (state.flags[q.id] ? ' active' : '') + '" id="flag-btn">' + flagIcon() + (state.flags[q.id] ? 'Marcada' : 'Marcar p/ revisão') + '</button>' +
+              (state.mode === 'study' ? '<button class="btn btn--secondary btn--sm" id="prev-btn" ' + (state.current === 0 ? 'disabled' : '') + '>← Anterior</button>' +
+              '<button class="flag-btn' + (state.flags[q.id] ? ' active' : '') + '" id="flag-btn">' + flagIcon() + (state.flags[q.id] ? 'Marcada' : 'Marcar p/ revisão') + '</button>' : '<span class="q-index">Questão ' + q.num + ' de ' + TOTAL + '</span>') +
             '</div>' +
             '<div class="exam-controls-right">' +
               (state.current === TOTAL - 1
@@ -253,11 +310,11 @@
           '</div>' +
         '</div>' +
         '<aside class="exam-nav">' +
-          '<h3>Navegação</h3>' +
+          '<h3>' + (state.mode === 'real' ? 'Progresso da tentativa' : 'Navegação') + '</h3>' +
           '<div class="nav-legend">' +
             '<span><span class="legend-dot" style="background:var(--color-primary-highlight);border:1px solid var(--color-primary)"></span>Respondida</span>' +
             '<span><span class="legend-dot" style="background:var(--color-gold-highlight)"></span>Interativa</span>' +
-            '<span><span class="legend-dot" style="border:1px solid var(--color-warning)"></span>Marcada</span>' +
+            (state.mode === 'study' ? '<span><span class="legend-dot" style="border:1px solid var(--color-warning)"></span>Marcada</span>' : '<span>Questões anteriores bloqueadas</span>') +
           '</div>' +
           '<div class="nav-grid" id="nav-grid"></div>' +
           '<div style="margin-top:var(--space-5)"><button class="btn btn--outline btn--sm" id="finish-btn-side" style="width:100%">Finalizar simulado</button></div>' +
@@ -267,10 +324,14 @@
     renderNavGrid();
     renderQuestionBody(q);
 
-    document.getElementById('prev-btn').addEventListener('click', function () { go(state.current - 1); });
+    document.getElementById('calculator-btn').addEventListener('click', openCalculator);
+    document.getElementById('notes-btn').addEventListener('click', openNotes);
+    var prevBtn = document.getElementById('prev-btn');
+    if (prevBtn) prevBtn.addEventListener('click', function () { go(state.current - 1); });
     var nextBtn = document.getElementById('next-btn');
     if (nextBtn) nextBtn.addEventListener('click', function () { go(state.current + 1); });
-    document.getElementById('flag-btn').addEventListener('click', function () {
+    var flagBtn = document.getElementById('flag-btn');
+    if (flagBtn) flagBtn.addEventListener('click', function () {
       state.flags[q.id] = !state.flags[q.id];
       renderExam();
     });
@@ -289,7 +350,7 @@
     var msg = answeredCount < TOTAL
       ? 'Você respondeu ' + answeredCount + ' de ' + TOTAL + ' questões. Deseja finalizar o simulado mesmo assim?'
       : 'Finalizar o simulado e ver seu resultado?';
-    if (window.confirm(msg)) submitExam();
+    ask('Finalizar tentativa', msg, 'Finalizar e ver resultado', submitExam);
   }
 
   function renderNavGrid() {
@@ -300,18 +361,27 @@
       if (i === state.current) cls.push('current');
       if (isAnswered(q)) cls.push('answered');
       if (state.flags[q.id]) cls.push('flagged');
+      if (state.mode === 'real') {
+        return '<span class="' + cls.join(' ') + (i < state.current ? ' locked' : '') + '" aria-label="Questão ' + q.num + (i < state.current ? ', bloqueada' : i === state.current ? ', atual' : ', não visualizada') + '"' + (i === state.current ? ' aria-current="step"' : '') + '>' + q.num + '</span>';
+      }
       return '<button class="' + cls.join(' ') + '" data-i="' + i + '" title="Questão ' + q.num + '">' + q.num + '</button>';
     }).join('');
-    grid.querySelectorAll('.nav-cell').forEach(function (btn) {
+    grid.querySelectorAll('button.nav-cell').forEach(function (btn) {
       btn.addEventListener('click', function () { go(parseInt(btn.dataset.i, 10)); });
     });
   }
 
   function go(i) {
-    if (i < 0 || i >= TOTAL) return;
-    state.current = i;
-    renderExam();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (state.screen !== 'exam' || i < 0 || i >= TOTAL) return;
+    if (state.mode === 'real' && i !== state.current + 1) return;
+    function advance() {
+      state.current = i;
+      renderExam();
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+    if (state.mode === 'real' && !isAnswered(QUESTIONS[state.current])) {
+      ask('Avançar sem concluir?', 'A questão ou etapas restantes ficarão em branco, sem pontuação. Você não poderá voltar para responder ou revisar.', 'Avançar e bloquear', advance);
+    } else advance();
   }
 
   /* ---------------- QUESTION BODY: MCQ ---------------- */
@@ -375,8 +445,8 @@
 
     if (allDone) {
       var correctSteps = answers.filter(function (a, i) { return q.steps[i].options[a].isBest; }).length;
-      html += '<div class="feedback-box' + (correctSteps === q.steps.length ? ' is-correct' : '') + '" style="margin-top:var(--space-6)">' +
-        '<strong>Cenário concluído</strong>Você acertou ' + correctSteps + ' de ' + q.steps.length + ' decisões nesta situação interativa. ' +
+      html += '<div class="feedback-box' + (state.mode === 'study' && correctSteps === q.steps.length ? ' is-correct' : '') + '" style="margin-top:var(--space-6)">' +
+        '<strong>Cenário concluído</strong>' + (state.mode === 'study' ? 'Você acertou ' + correctSteps + ' de ' + q.steps.length + ' decisões. ' : 'Suas 3 decisões foram registradas. A correção estará no resultado final. ') +
         (q.num < TOTAL ? 'Use "Próxima" para seguir ao simulado.' : 'Você pode finalizar o simulado agora.') +
         '</div>';
     }
@@ -412,10 +482,11 @@
       '<p class="q-context" style="font-weight:600">' + step.prompt + '</p>' +
       '<div class="options">' + step.options.map(function (opt, oi) {
         var cls = 'option';
-        if (chosenIdx !== null) {
+        if (chosenIdx !== null && state.mode === 'study') {
           cls += (oi === chosenIdx ? (opt.isBest ? ' correct' : ' incorrect') : '');
           if (oi !== chosenIdx && opt.isBest) cls += ' correct';
         }
+        if (chosenIdx !== null && state.mode === 'real' && oi === chosenIdx) cls += ' selected';
         var letter = String.fromCharCode(65 + oi);
         var disabled = chosenIdx !== null ? 'disabled' : '';
         return '<button class="' + cls + '" data-idx="' + oi + '" ' + disabled + '><span class="option__marker">' + letter + '</span><span>' + opt.text + '</span></button>';
@@ -423,14 +494,11 @@
 
     if (chosenIdx !== null) {
       var chosenOpt = step.options[chosenIdx];
-      block += '<div class="feedback-box ' + (chosenOpt.isBest ? 'is-correct' : 'is-incorrect') + '">' +
-        '<strong>' + (chosenOpt.isBest ? '✓ Melhor decisão' : '✗ Não é a melhor decisão') + '</strong>' + chosenOpt.feedback + '</div>';
+      block += state.mode === 'study' ? '<div class="feedback-box ' + (chosenOpt.isBest ? 'is-correct' : 'is-incorrect') + '">' +
+        '<strong>' + (chosenOpt.isBest ? '✓ Melhor decisão' : '✗ Não é a melhor decisão') + '</strong>' + chosenOpt.feedback + '</div>' : '<p class="q-index">Decisão registrada. Correção disponível ao finalizar.</p>';
       // show continue button only if this is the latest answered step (idx === pointer) and there's a next step
       if (idx === state.treePointer[q.id] && idx < q.steps.length - 1) {
         block += '<div style="margin-top:var(--space-4)"><button class="btn btn--sm js-continue" data-next="' + (idx + 1) + '">Continuar cenário →</button></div>';
-      } else if (idx === state.treePointer[q.id] && idx === q.steps.length - 1) {
-        // last step just answered — bump pointer so allDone logic renders summary next paint
-        setTimeout(function () { state.treePointer[q.id] = q.steps.length; }, 0);
       }
     }
     block += '</div>';
@@ -439,7 +507,10 @@
 
   /* ================= SUBMIT / RESULTS ================= */
   function submitExam() {
+    if (state.screen !== 'exam') return;
     if (state.timerHandle) clearInterval(state.timerHandle);
+    if (overlay.open) closeDialog();
+    state.timeLeftSec = Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
     state.finishedAt = Date.now();
     state.screen = 'results';
     document.getElementById('timer').hidden = true;
@@ -464,8 +535,8 @@
     var scores = QUESTIONS.map(scoreQuestion);
     var totalScore = scores.reduce(function (a, b) { return a + b; }, 0);
     var pct = (totalScore / TOTAL) * 100;
-    var passed = pct >= DATA.meta.passing_pct;
-    var roundedAcertos = Math.round(totalScore);
+    var passed = pct + 1e-9 >= DATA.meta.passing_pct;
+    var roundedAcertos = Math.round(totalScore * 10) / 10;
 
     var themeScores = {};
     THEME_ORDER.forEach(function (t) { themeScores[t] = { correct: 0, total: 0 }; });
@@ -504,7 +575,8 @@
           '<div class="result-ring__pct"><strong>' + pct.toFixed(1) + '%</strong><span>' + roundedAcertos + ' / ' + TOTAL + '</span></div>' +
         '</div>' +
         '<div class="result-status ' + (passed ? 'pass' : 'fail') + '">' + (passed ? 'Aprovado' : 'Reprovado') + '</div>' +
-        '<p class="q-index">Mínimo exigido: ' + DATA.meta.passing_pct + '% (' + DATA.meta.passing_correct + ' acertos) · Tempo utilizado: ' + formatDuration(state) + '</p>' +
+        '<p class="q-index">' + (state.mode === 'real' ? 'Prova real' : 'Estudo') + ' · Meta do treino: ' + DATA.meta.passing_pct + '% · Tempo utilizado: ' + formatDuration() + '</p>' +
+        '<p class="q-index">Pontuação pedagógica: cada múltipla escolha vale 1 ponto; cada árvore vale até 1 ponto, dividido entre suas 3 etapas. Essa pontuação parcial é uma convenção deste simulado, não uma reprodução da metodologia oficial.</p>' +
       '</section>' +
 
       '<div class="card">' +
@@ -534,7 +606,7 @@
   }
 
   function formatDuration() {
-    var usedSec = DATA.meta.duration_minutes * 60 - state.timeLeftSec;
+    var usedSec = state.durationMinutes * 60 - state.timeLeftSec;
     var h = Math.floor(usedSec / 3600), m = Math.floor((usedSec % 3600) / 60);
     return h + 'h' + String(m).padStart(2, '0') + 'min';
   }
@@ -595,23 +667,111 @@
   }
 
   function restart() {
-    if (!window.confirm('Isso vai reiniciar o simulado do zero, apagando suas respostas atuais. Continuar?')) return;
-    state.current = 0;
-    state.mcqAnswers = {};
-    state.treeAnswers = {};
-    state.treePointer = {};
-    state.flags = {};
-    state.timeLeftSec = DATA.meta.duration_minutes * 60;
-    state.reviewFilter = 'all';
-    QUESTIONS.forEach(function (q) {
-      if (q.type === 'tree') {
-        state.treeAnswers[q.id] = new Array(q.steps.length).fill(null);
-        state.treePointer[q.id] = 0;
-      }
+    ask('Nova tentativa', 'O resultado e as anotações desta tentativa serão apagados. Ao iniciar, um novo conjunto de questões será sorteado.', 'Preparar nova tentativa', function () {
+      if (state.timerHandle) clearInterval(state.timerHandle);
+      loadExam();
+      state.screen = 'start';
+      renderStart();
+      window.scrollTo({ top: 0, behavior: 'instant' });
     });
-    state.screen = 'start';
-    renderStart();
-    window.scrollTo({ top: 0 });
+  }
+
+  /* ---------------- LOCAL EXAM TOOLS ---------------- */
+  function openNotes() {
+    showDialog('Bloco de notas', '<label for="exam-notes">Rascunho desta tentativa</label><textarea id="exam-notes" rows="10" maxlength="20000" placeholder="Anote seus cálculos e raciocínios aqui."></textarea><p class="q-index">As notas ficam na memória enquanto esta página estiver aberta. São apagadas ao iniciar uma nova tentativa ou recarregar a página. O cronômetro continua.</p>', function () {
+      var notes = document.getElementById('exam-notes');
+      notes.value = state.notes;
+      notes.addEventListener('input', function () { state.notes = notes.value; });
+      notes.focus();
+    });
+  }
+
+  // Recursive-descent arithmetic parser. Never evaluates JavaScript or HTML.
+  function calculate(expression) {
+    var normalized = expression.replace(/,/g, '.').replace(/[×x]/g, '*').replace(/÷/g, '/').replace(/\s/g, '');
+    if (!normalized || normalized.length > 160) throw Error('Digite uma expressão de até 160 caracteres.');
+    var tokens = normalized.match(/(?:\d+(?:\.\d*)?|\.\d+)|[()+*/^%\-]/g);
+    if (!tokens || tokens.join('') !== normalized) throw Error('Use apenas números e operações aritméticas.');
+    var pos = 0;
+    function primary() {
+      var value;
+      if (tokens[pos] === '(') {
+        pos++;
+        value = sum();
+        if (tokens[pos++] !== ')') throw Error('Confira os parênteses.');
+      } else {
+        if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(tokens[pos] || '')) throw Error('Confira a expressão.');
+        value = Number(tokens[pos++]);
+      }
+      while (tokens[pos] === '%') { pos++; value /= 100; }
+      return value;
+    }
+    function power() {
+      var value = primary();
+      if (tokens[pos] === '^') { pos++; value = Math.pow(value, unary()); }
+      return value;
+    }
+    function unary() {
+      if (tokens[pos] === '+') { pos++; return unary(); }
+      if (tokens[pos] === '-') { pos++; return -unary(); }
+      return power();
+    }
+    function product() {
+      var value = unary();
+      while (tokens[pos] === '*' || tokens[pos] === '/') {
+        var operator = tokens[pos++], right = unary();
+        if (operator === '/' && right === 0) throw Error('Não é possível dividir por zero.');
+        value = operator === '*' ? value * right : value / right;
+      }
+      return value;
+    }
+    function sum() {
+      var value = product();
+      while (tokens[pos] === '+' || tokens[pos] === '-') {
+        var operator = tokens[pos++], right = product();
+        value = operator === '+' ? value + right : value - right;
+      }
+      return value;
+    }
+    var answer = sum();
+    if (pos !== tokens.length || !Number.isFinite(answer)) throw Error('Expressão inválida ou resultado fora do limite.');
+    return Number(answer.toPrecision(12));
+  }
+
+  function openCalculator() {
+    var keys = ['7','8','9','÷','4','5','6','×','1','2','3','-','0',',','%','+','(',')','^','⌫'];
+    showDialog('Calculadora', '<form id="calc-form"><label for="calc-input">Expressão</label><input id="calc-input" type="text" inputmode="text" autocomplete="off" maxlength="160" placeholder="Ex.: 1000 × (1 + 10%) ^ 2"><output id="calc-result" aria-live="polite"></output><div class="calc-keys">' +
+      keys.map(function (key) { return '<button class="btn btn--secondary" type="button" data-key="' + esc(key) + '">' + key + '</button>'; }).join('') +
+      '</div><div class="cta-row"><button class="btn btn--secondary" type="button" id="calc-clear">Limpar</button><button class="btn" type="submit">Calcular</button></div></form><p class="q-index">Aceita parênteses, vírgula decimal, potência (^) e percentual (10% = 0,10). Use Enter para calcular. Ferramenta de treino, não réplica da calculadora oficial; o cronômetro continua.</p>', function () {
+      var input = document.getElementById('calc-input');
+      var result = document.getElementById('calc-result');
+      input.value = state.calcExpression;
+      input.addEventListener('input', function () { state.calcExpression = input.value; result.textContent = ''; });
+      document.getElementById('calc-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        state.calcExpression = input.value;
+        try { result.textContent = '= ' + calculate(input.value).toLocaleString('pt-BR', { maximumSignificantDigits: 12 }); }
+        catch (error) { result.textContent = error.message; }
+      });
+      overlay.querySelectorAll('[data-key]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var start = input.selectionStart, end = input.selectionEnd;
+          var key = button.dataset.key;
+          if (key === '⌫') {
+            input.setRangeText('', start === end ? Math.max(0, start - 1) : start, end, 'end');
+          } else if (input.value.length < 160) {
+            input.setRangeText(key, start, end, 'end');
+          }
+          state.calcExpression = input.value;
+          result.textContent = '';
+          input.focus();
+        });
+      });
+      document.getElementById('calc-clear').addEventListener('click', function () {
+        input.value = ''; state.calcExpression = ''; result.textContent = ''; input.focus();
+      });
+      input.focus();
+    });
   }
 
   /* ---------------- INIT ---------------- */

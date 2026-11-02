@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Simulado CPA — Certificado Profissional ANBIMA</title>
-<meta name="description" content="Simulado interativo da nova certificação CPA da ANBIMA (formato 2026): 40 questões de múltipla escolha contextualizadas e 10 questões interativas de árvore de decisão, com cronômetro de 2h30 e gabarito comentado." />
+<title>Simulado CPA · Prova real e estudo</title>
+<meta name="description" content="Simulado independente CPA 2026: modos Prova real e Estudo, 50 questões sorteadas, árvores de diálogo, calculadora, bloco de notas e gabarito comentado." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%230b3d4c%22/><path d=%22M8 22V10l8 7 8-7v12%22 stroke=%22%23e3b23c%22 stroke-width=%222.4%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css?v=20261102" />
 </head>
 <body>
 
@@ -23,7 +23,7 @@
       </svg>
       <div class="brand__text">
         <strong>Simulado CPA</strong>
-        <span>Certificado Profissional ANBIMA · formato 2026</span>
+        <span>Certificação Profissional Anbima de Distribuição</span>
       </div>
     </div>
     <div class="header-actions">
@@ -37,12 +37,13 @@
 </header>
 
 <main id="app"></main>
+<dialog id="app-dialog" aria-labelledby="dialog-title"></dialog>
 
 <footer class="app-footer">
-  <p>Simulado de estudo, não afiliado à ANBIMA. Estrutura, temas e critérios de aprovação seguem os documentos oficiais publicados pela ANBIMA para a nova certificação CPA, vigente a partir de janeiro de 2026.</p>
+  <p>Treino independente, não afiliado à Anbima. Questões autorais, navegação e pontuação pedagógicas; não reproduz integralmente a plataforma nem a metodologia oficial. Referência operacional: edital versão 1.6, setembro de 2026. Não há cases independentes adicionais neste banco. Ao recarregar a página, a tentativa e as anotações serão perdidas.</p>
 </footer>
 
 <script src="pool.js"></script>
-<script src="app.js"></script>
+<script src="app.js?v=20261102"></script>
 </body>
 </html>
