@@ -405,3 +405,10 @@ dialog .q-index { margin-top: var(--space-4); }
   .exam-controls { flex-direction: column; align-items: stretch; }
   .exam-controls-left, .exam-controls-right { justify-content: center; }
 }
+.bank-summary { margin-top: var(--space-3); }
+.references p { margin: var(--space-3) 0; line-height: 1.65; }
+.references summary { cursor: pointer; font-weight: 600; padding: var(--space-2) 0; }
+.reference-links { padding-left: var(--space-5); }
+.reference-links li { margin: var(--space-3) 0; }
+.references a, .review-metadata a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.review-metadata { line-height: 1.7; margin: var(--space-2) 0 var(--space-3); }

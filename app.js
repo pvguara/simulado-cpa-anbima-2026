@@ -164,6 +164,10 @@
   /* ================= START SCREEN ================= */
   function renderStart() {
     var weights = DATA.meta.weights;
+    var bankTotal = POOL.mcq.length + POOL.trees.length;
+    var sourcesHtml = DATA.meta.sources.map(function (source) {
+      return '<li><a href="' + esc(source.url) + '" target="_blank" rel="noopener noreferrer">' + esc(source.label) + '</a></li>';
+    }).join('');
     var barsHtml = THEME_ORDER.map(function (theme) {
       var pct = weights[theme];
       var mc = DATA.meta.mcq_counts[theme] || 0;
@@ -181,7 +185,8 @@
         '<div>' +
           '<div class="hero__eyebrow">Simulado independente · CPA 2026</div>' +
           '<h1>Simulado CPA · Certificação Profissional Anbima de Distribuição</h1>' +
-          '<p class="hero__sub">Treine com 50 questões sorteadas de um banco de 100, cronômetro e gabarito comentado. Escolha entre navegação sequencial para treino de prova e navegação livre para estudo.</p>' +
+          '<p class="hero__sub">Treine com 50 questões sorteadas de um banco de ' + bankTotal + ', cronômetro e gabarito comentado. Escolha entre navegação sequencial para treino de prova e navegação livre para estudo.</p>' +
+          '<p class="q-index bank-summary">' + POOL.mcq.length + ' questões de múltipla escolha + ' + POOL.trees.length + ' árvores de diálogo no banco autoral.</p>' +
         '</div>' +
         '<div class="stat-grid">' +
           '<div class="stat-card"><strong>' + DATA.meta.total_questions + '</strong><span>questões (40 múltipla escolha + 10 árvores de diálogo)</span></div>' +
@@ -210,7 +215,8 @@
       '<div class="card">' +
         '<h2>Como funciona</h2>' +
         '<ul class="rules-list">' +
-          li('São 40 questões de múltipla escolha contextualizadas e 10 árvores de diálogo, com 3 etapas cada. Mantivemos o banco pedagógico existente; não são questões oficiais nem novos cases independentes.') +
+          li('Cada tentativa sorteia 40 questões de múltipla escolha contextualizadas e 10 árvores de diálogo, com 3 etapas e 3 alternativas por etapa. As árvores são simplificações pedagógicas, não réplicas do modelo oficial. Não há um módulo separado de cases compartilhados.') +
+          li('O banco tem questões autorais fáceis, médias e difíceis, com predominância intermediária. A dificuldade é uma estimativa pedagógica, sem calibração oficial ou garantia de equivalência com a prova.') +
           li('O cronômetro inicia ao começar a tentativa e o envio é automático ao acabar o tempo. Calculadora e bloco de notas estão disponíveis sem pausar o relógio.') +
           li('Em Prova real, ao avançar você bloqueia a questão anterior, mesmo em branco. Nas árvores, a correção fica oculta até o resultado. Em Estudo, continuam disponíveis navegação livre, marcação e feedback imediato.') +
           li('Ao final, você recebe a nota, o resultado (aprovado/reprovado a partir de 70%), o desempenho por módulo e o gabarito comentado de todas as 50 questões.') +
@@ -219,7 +225,15 @@
           '<button class="btn" id="start-btn">Iniciar simulado</button>' +
           '<span class="q-index" id="start-summary">' + (state.durationMinutes === 180 ? '3h com tempo adicional' : '2h30') + ' · 50 questões por tentativa</span>' +
         '</div>' +
-      '</div>';
+      '</div>' +
+
+      '<section class="card references" aria-labelledby="references-title">' +
+        '<h2 id="references-title">Modelos oficiais e referências</h2>' +
+        '<p>O caderno público da ANBIMA reúne questões alinhadas ao exame-piloto. Ele serve como modelo de estilo e conteúdo, não como uma prova anterior completa. As questões deste simulado são autorais, sem reprodução de provas sigilosas.</p>' +
+        '<p>Na ampliação, o programa detalhado orientou os temas; o caderno e o guia orientaram a construção de situações práticas, comandos e alternativas. Os novos itens identificam o tópico do programa no gabarito.</p>' +
+        '<details><summary>Consultar materiais oficiais da ANBIMA</summary><ul class="reference-links">' + sourcesHtml + '</ul></details>' +
+        '<p class="q-index">Materiais de apoio enviados nesta conversa não foram publicados nem incorporados como arquivos de download. Consulte sempre as versões e regras aplicáveis à data do seu exame.</p>' +
+      '</section>';
 
     document.getElementById('start-btn').addEventListener('click', startExam);
     document.querySelectorAll('[name="exam-mode"]').forEach(function (input) {
@@ -628,7 +642,12 @@
     var badge = '<span class="review-badge ' + (ok ? 'ok' : 'no') + '">' + (ok ? '✓' : '✗') + '</span>';
     var head = '<div class="review-item__head">' + badge +
       '<span class="tag' + (q.type === 'tree' ? ' tag--gold' : '') + '">Questão ' + q.num + '</span>' +
-      '<span class="tag">' + THEME_SHORT[q.theme] + '</span></div>';
+      '<span class="tag">' + THEME_SHORT[q.theme] + '</span></div>' +
+      '<p class="q-index review-metadata">' + esc(q.origin || 'Questão autoral') +
+      ' · ' + esc(q.bank_id || '') + ' · Dificuldade estimada: ' + esc(q.difficulty || 'Médio') +
+      (q.pd_verified ? '<br>Tópico do programa: ' + esc(q.pd) + ' · ' + esc(q.topic) +
+        ' · <a href="' + esc(q.references[0]) + '" target="_blank" rel="noopener noreferrer">Consultar programa CPA</a>' : '') +
+      '</p>';
 
     if (q.type === 'mcq') {
       var sel = state.mcqAnswers[q.id];

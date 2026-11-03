@@ -134,21 +134,21 @@ add_mcq(PROD, "2.1.1.1.5", "Um cliente pretende investir em um Certificado de Re
     0,
     "O CRI (assim como o CRA) é isento de IR para pessoa física, mas, diferentemente do CDB/LCI/LCA, não é garantido pelo FGC — o risco de crédito está associado aos recebíveis que dão suporte à operação, o que exige atenção redobrada do investidor.")
 
-add_mcq(PROD, "2.1.3.2", "Um cliente resgata cotas de um fundo de renda fixa após 400 dias de aplicação e pergunta qual alíquota de Imposto de Renda incidirá sobre o rendimento. Considerando a tabela regressiva aplicável a esse tipo de fundo, a alíquota correta é:",
-    ["15%, pois aplicações com prazo superior a 720 dias têm alíquota de 15%, mas entre 361 e 720 dias a alíquota é de 17,5%.",
+add_mcq(PROD, "2.1.3.2", "Um cliente resgata cotas de um fundo de renda fixa classificado como de longo prazo para fins tributários após 400 dias de aplicação. Sem considerar recolhimentos anteriores, qual alíquota da tabela regressiva se aplica ao rendimento nessa faixa de prazo?",
+    ["17,5%, correspondente à faixa de 361 a 720 dias na tabela de longo prazo.",
      "22,5%, independentemente do prazo de aplicação.",
      "0%, pois fundos de renda fixa são isentos de IR para pessoa física.",
      "20%, alíquota fixa para todos os fundos de investimento."],
     0,
     "A tabela regressiva de IR para fundos de renda fixa (não isentos) segue: até 180 dias 22,5%; de 181 a 360 dias 20%; de 361 a 720 dias 17,5%; acima de 720 dias 15%. Com 400 dias de aplicação, a alíquota correta é 17,5%.")
 
-add_mcq(PROD, "2.1.1.2.2", "Um cliente recebe Juros sobre Capital Próprio (JCP) de uma empresa investida e pergunta sobre a diferença tributária em relação ao recebimento de dividendos. A resposta correta é:",
-    ["O JCP sofre retenção de Imposto de Renda na fonte (15%), enquanto os dividendos são isentos de IR para o acionista.",
-     "Tanto o JCP quanto os dividendos são isentos de IR para o investidor pessoa física.",
-     "O JCP é isento de IR e os dividendos sofrem retenção de 15% na fonte.",
-     "Ambos sofrem tributação de 22,5% na fonte, sem exceções."],
+add_mcq(PROD, "2.1.1.2.2.2.4", "Uma companhia anuncia pagamento de Juros sobre Capital Próprio (JCP). Ao comparar com dividendos de outra empresa, um cliente olha apenas o valor bruto anunciado. Qual orientação evita uma comparação incompleta?",
+    ["Conferir valor líquido, eventuais retenções, datas e regras aplicáveis ao beneficiário, sem presumir tratamento tributário idêntico para qualquer distribuição.",
+     "Comparar apenas os valores brutos, porque qualquer retenção será devolvida integralmente ao investidor.",
+     "Considerar somente o nome do provento, pois JCP implica ganho de capital garantido na ação.",
+     "Desconsiderar datas e condições, pois anunciar proventos obriga a cotação a subir no mesmo montante."],
     0,
-    "Os dividendos distribuídos por empresas são isentos de IR para o acionista, pois já houve tributação na pessoa jurídica. Já o JCP é dedutível para a empresa pagadora e sofre retenção de IR de 15% na fonte para o beneficiário — uma distinção tributária importante.")
+    "A comparação deve usar os fluxos efetivamente recebidos e as regras aplicáveis ao pagamento e ao beneficiário. Não é adequado generalizar uma alíquota ou isenção sem considerar a legislação e as condições da distribuição; provento tampouco garante valorização da ação.")
 
 add_mcq(PROD, "2.1.2.2", "Segundo a Resolução CVM nº 175, um fundo de investimento pode ser estruturado com divisão em classes e subclasses de cotas. Sobre a segregação patrimonial entre classes, é correto afirmar que:",
     ["Cada classe de cotas possui patrimônio segregado, respondendo apenas pelas obrigações e direitos a ela vinculados, salvo disposição em contrário no regulamento.",
@@ -180,7 +180,7 @@ add_mcq(PROD, "2.1.4", "Um investidor busca renda mensal isenta de IR investindo
      "Os rendimentos distribuídos são tributados pela tabela regressiva de renda fixa.",
      "FIIs não distribuem rendimentos periódicos, apenas valorização de cota."],
     0,
-    "Rendimentos periódicos distribuídos por FIIs a pessoas físicas são isentos de IR quando atendidos os requisitos legais (cotas negociadas em bolsa/mercado de balcão organizado, fundo com no mínimo 50 cotistas e cotista com menos de 10% das cotas, entre outros). Já o ganho de capital obtido na venda das cotas é tributado, geralmente à alíquota de 20%.")
+    "A isenção dos rendimentos de FIIs para pessoas físicas depende do cumprimento dos requisitos legais de negociação, dispersão de cotistas e limites de participação. Ela não se estende automaticamente ao ganho na venda das cotas. Não se deve tratar toda distribuição ou todo investidor como isento.")
 
 add_mcq(PROD, "2.1.1.4", "Um cliente conservador se interessa por um Certificado de Operações Estruturadas (COE) com garantia de capital protegido. O assessor deve explicar que esse tipo de estrutura:",
     ["Garante a devolução, no mínimo, do capital investido no vencimento, ainda que o cenário de mercado embutido no derivativo não se realize, mas normalmente não distribui rendimentos intermediários.",
@@ -813,8 +813,8 @@ tree_counts = counts_by_theme(TREES)
 
 data = {
     "meta": {
-        "title": "Simulado CPA — Certificado Profissional ANBIMA",
-        "subtitle": "Formato oficial 2026 · 50 questões · 2h30 · 70% para aprovação",
+        "title": "Simulado independente CPA 2026",
+        "subtitle": "Treino autoral · 50 questões · 2h30",
         "duration_minutes": 150,
         "total_questions": len(MCQ) + len(TREES),
         "passing_pct": 70,
@@ -833,14 +833,13 @@ data = {
     "trees": TREES,
 }
 
-with open("data/questions.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-with open("data.js", "w", encoding="utf-8") as f:
-    f.write("window.CPA_DATA = ")
-    json.dump(data, f, ensure_ascii=False)
-    f.write(";\n")
-
-print("MCQ:", len(MCQ), mcq_counts)
-print("Trees:", len(TREES), tree_counts)
-print("Total questions:", len(MCQ) + len(TREES))
+if __name__ == "__main__":
+    with open("data/questions.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    with open("data.js", "w", encoding="utf-8") as f:
+        f.write("window.CPA_DATA = ")
+        json.dump(data, f, ensure_ascii=False)
+        f.write(";\n")
+    print("MCQ:", len(MCQ), mcq_counts)
+    print("Trees:", len(TREES), tree_counts)
+    print("Total questions:", len(MCQ) + len(TREES))

@@ -1,7 +1,9 @@
 {
   "meta": {
-    "title": "Simulado CPA — Certificado Profissional ANBIMA",
-    "subtitle": "Formato oficial 2026 · 50 questões · 2h30 · 70% para aprovação",
+    "title": "Simulado independente CPA 2026",
+    "subtitle": "Treino autoral · 50 questões por tentativa · 2h30",
+    "bank_version": "2026-11-02-c",
+    "difficulty_note": "Estimativa pedagógica, sem calibração ou classificação oficial da ANBIMA.",
     "duration_minutes": 150,
     "total_questions": 50,
     "passing_pct": 70,
@@ -22,19 +24,27 @@
       "Produtos do mercado financeiro": 4,
       "Relacionamento com o cliente": 6
     },
-    "pool_mcq_total": 80,
-    "pool_tree_total": 20,
+    "pool_mcq_total": 120,
+    "pool_tree_total": 30,
     "pool_mcq_counts": {
-      "Sistema Financeiro Nacional": 20,
-      "Produtos do mercado financeiro": 32,
-      "Relacionamento com o cliente": 18,
-      "Inovação e desenvolvimento de mercado": 10
+      "Sistema Financeiro Nacional": 30,
+      "Produtos do mercado financeiro": 48,
+      "Relacionamento com o cliente": 27,
+      "Inovação e desenvolvimento de mercado": 15
     },
     "pool_tree_counts": {
-      "Produtos do mercado financeiro": 8,
-      "Relacionamento com o cliente": 12
+      "Produtos do mercado financeiro": 12,
+      "Relacionamento com o cliente": 18
     },
     "sources": [
+      {
+        "label": "ANBIMA · Caderno oficial CPA: modelos alinhados ao exame-piloto",
+        "url": "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      },
+      {
+        "label": "ANBIMA · Guia de elaboração de questões",
+        "url": "https://www.anbima.com.br/data/files/40/C6/A8/5E/FCBF891048BA3F89EA2BA2A8/Guia-de-Elaboracao-de-Questao-Certificacoes-Anbima.pdf"
+      },
       {
         "label": "ANBIMA — Estruturas das provas CPA, C-Pro R e C-Pro I",
         "url": "https://www.anbima.com.br/pt_br/noticias/definidas-as-estruturas-das-provas-para-as-novas-certificacoes-cpa-c-pro-r-e-c-pro-i-8A2AB2AE98F3AB840198FBE551005B27-00.htm"
@@ -66,7 +76,9 @@
       ],
       "correct": 3,
       "explanation": "O CMN é o órgão normativo máximo do SFN: define diretrizes de política monetária, cambial e creditícia, mas não executa operações — a execução cabe ao Banco Central. CVM regula valores mobiliários e ANBIMA é autorreguladora, não órgão normativo.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-001",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -80,7 +92,9 @@
       ],
       "correct": 2,
       "explanation": "O Banco Central supervisiona instituições financeiras, autoriza seu funcionamento e executa a política monetária. SUSEP supervisiona seguradoras, PREVIC supervisiona fundos de pensão (EFPC) e CNSP é órgão normativo do setor de seguros.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-002",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -94,7 +108,9 @@
       ],
       "correct": 3,
       "explanation": "A CVM é o órgão supervisor do mercado de capitais, responsável por regular e fiscalizar a emissão e negociação de valores mobiliários e coibir práticas irregulares. O BC supervisiona o SFN de forma mais amplas ligado a moeda e crédito; a B3 é operadora de mercado, não supervisora.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-003",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -108,7 +124,9 @@
       ],
       "correct": 2,
       "explanation": "A SUSEP supervisiona seguradoras e entidades abertas de previdência complementar (EAPC), que comercializam PGBL e VGBL. A PREVIC supervisiona as entidades fechadas de previdência complementar (fundos de pensão).",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-004",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -122,7 +140,9 @@
       ],
       "correct": 3,
       "explanation": "A política monetária contracionista (alta de juros) encarece o crédito e desestimula consumo/investimento, sendo um instrumento de controle da inflação por meio da transmissão aos preços dos ativos e à atividade econômica, com efeitos que ocorrem com defasagem — não instantaneamente.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-005",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -136,7 +156,9 @@
       ],
       "correct": 3,
       "explanation": "O resultado primário é a diferença entre receitas e despesas do governo, sem considerar os juros da dívida pública. Já o resultado nominal inclui o pagamento de juros. Esse conceito está diretamente ligado à política fiscal e à Lei de Responsabilidade Fiscal.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-006",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -150,7 +172,9 @@
       ],
       "correct": 2,
       "explanation": "A taxa PTAX é a taxa de câmbio de referência calculada pelo Banco Central, usada como parâmetro em diversas operações financeiras e contratos indexados ao dólar. TR e Selic/DI não são taxas de câmbio.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-007",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -164,7 +188,9 @@
       ],
       "correct": 2,
       "explanation": "O IPCA (IBGE) é o índice oficial de referência para a meta de inflação definida pelo CMN. O IGP-M (FGV) tem maior peso de preços no atacado e é mais volátil a câmbio e commodities, sendo comum em contratos de aluguel.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-008",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -178,7 +204,9 @@
       ],
       "correct": 0,
       "explanation": "Os Acordos de Basileia (I, II e III) definem parâmetros mínimos de capital regulatório para bancos, visando reduzir o risco sistêmico e a alavancagem excessiva, protegendo a estabilidade do sistema financeiro.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-009",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -192,7 +220,9 @@
       ],
       "correct": 2,
       "explanation": "A classificação de investidor qualificado exige comprovação de recursos financeiros investidos acima do valor mínimo fixado pela CVM (ou determinadas certificações profissionais), além de declaração formal — trata-se de um enquadramento regulatório com critérios objetivos, não apenas idade.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-010",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -206,7 +236,9 @@
       ],
       "correct": 3,
       "explanation": "Tanto o CDB quanto a LCI contam com garantia do FGC até o limite vigente. O CDB é tributado pela tabela regressiva do IR (22,5% a 15%, conforme o prazo), enquanto a LCI (assim como a LCA) é isenta de IR para pessoas físicas, por se destinarem ao fomento de setores específicos (imobiliário e agronegócio).",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-011",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -220,7 +252,9 @@
       ],
       "correct": 3,
       "explanation": "O Tesouro IPCA+ (NTN-B) protege o poder de compra do investidor ao corrigir o principal pela inflação (IPCA) e agregar uma taxa de juros real, sendo adequado a objetivos de longo prazo como aposentadoria. O Tesouro Selic acompanha a taxa Selic/CDI, não a inflação diretamente, e o prefixado tem maior risco de mercado diante de mudanças na expectativa de juros.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-012",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -234,7 +268,9 @@
       ],
       "correct": 2,
       "explanation": "As debêntures incentivadas de infraestrutura (Lei 12.431/2011) contam com isenção de IR para pessoas físicas como forma de estimular o financiamento privado de projetos de infraestrutura. Debêntures comuns seguem a tabela regressiva normal de renda fixa.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-013",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -248,35 +284,41 @@
       ],
       "correct": 3,
       "explanation": "O CRI (assim como o CRA) é isento de IR para pessoa física, mas, diferentemente do CDB/LCI/LCA, não é garantido pelo FGC — o risco de crédito está associado aos recebíveis que dão suporte à operação, o que exige atenção redobrada do investidor.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-014",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
       "pd": "2.1.3.2",
-      "context": "Um cliente resgata cotas de um fundo de renda fixa após 400 dias de aplicação e pergunta qual alíquota de Imposto de Renda incidirá sobre o rendimento. Considerando a tabela regressiva aplicável a esse tipo de fundo, a alíquota correta é:",
+      "context": "Um cliente resgata cotas de um fundo de renda fixa classificado como de longo prazo para fins tributários após 400 dias de aplicação. Sem considerar recolhimentos anteriores, qual alíquota da tabela regressiva se aplica ao rendimento nessa faixa de prazo?",
       "options": [
-        "15%, pois aplicações com prazo superior a 720 dias têm alíquota de 15%, mas entre 361 e 720 dias a alíquota é de 17,5%.",
+        "17,5%, correspondente à faixa de 361 a 720 dias na tabela de longo prazo.",
         "22,5%, independentemente do prazo de aplicação.",
         "20%, alíquota fixa para todos os fundos de investimento.",
         "0%, pois fundos de renda fixa são isentos de IR para pessoa física."
       ],
       "correct": 0,
       "explanation": "A tabela regressiva de IR para fundos de renda fixa (não isentos) segue: até 180 dias 22,5%; de 181 a 360 dias 20%; de 361 a 720 dias 17,5%; acima de 720 dias 15%. Com 400 dias de aplicação, a alíquota correta é 17,5%.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-015",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
-      "pd": "2.1.1.2.2",
-      "context": "Um cliente recebe Juros sobre Capital Próprio (JCP) de uma empresa investida e pergunta sobre a diferença tributária em relação ao recebimento de dividendos. A resposta correta é:",
+      "pd": "2.1.1.2.2.2.4",
+      "context": "Uma companhia anuncia pagamento de Juros sobre Capital Próprio (JCP). Ao comparar com dividendos de outra empresa, um cliente olha apenas o valor bruto anunciado. Qual orientação evita uma comparação incompleta?",
       "options": [
-        "Ambos sofrem tributação de 22,5% na fonte, sem exceções.",
-        "O JCP sofre retenção de Imposto de Renda na fonte (15%), enquanto os dividendos são isentos de IR para o acionista.",
-        "O JCP é isento de IR e os dividendos sofrem retenção de 15% na fonte.",
-        "Tanto o JCP quanto os dividendos são isentos de IR para o investidor pessoa física."
+        "Desconsiderar datas e condições, pois anunciar proventos obriga a cotação a subir no mesmo montante.",
+        "Conferir valor líquido, eventuais retenções, datas e regras aplicáveis ao beneficiário, sem presumir tratamento tributário idêntico para qualquer distribuição.",
+        "Considerar somente o nome do provento, pois JCP implica ganho de capital garantido na ação.",
+        "Comparar apenas os valores brutos, porque qualquer retenção será devolvida integralmente ao investidor."
       ],
       "correct": 1,
-      "explanation": "Os dividendos distribuídos por empresas são isentos de IR para o acionista, pois já houve tributação na pessoa jurídica. Já o JCP é dedutível para a empresa pagadora e sofre retenção de IR de 15% na fonte para o beneficiário — uma distinção tributária importante.",
-      "difficulty": "Médio"
+      "explanation": "A comparação deve usar os fluxos efetivamente recebidos e as regras aplicáveis ao pagamento e ao beneficiário. Não é adequado generalizar uma alíquota ou isenção sem considerar a legislação e as condições da distribuição; provento tampouco garante valorização da ação.",
+      "difficulty": "Médio",
+      "bank_id": "ME-016",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -290,7 +332,9 @@
       ],
       "correct": 3,
       "explanation": "A Resolução CVM 175 trouxe a estrutura de fundos organizados em classes (e subclasses) de cotas, com segregação patrimonial entre elas como regra geral — cada classe responde por suas próprias obrigações, o que reduz o risco de contágio entre estratégias distintas dentro do mesmo veículo.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-017",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -304,7 +348,9 @@
       ],
       "correct": 2,
       "explanation": "Os fundos multimercados possuem política de investimento que permite combinar diversas classes de ativos (renda fixa, ações, câmbio, derivativos) e estratégias, sendo adequados a investidores que buscam diversificação sem se limitar a uma única classe.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-018",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -318,7 +364,9 @@
       ],
       "correct": 3,
       "explanation": "O come-cotas é a antecipação do IR (nos meses de maio e novembro) sobre fundos de renda fixa e multimercado (exceto fundos de ações), recolhida pela redução da quantidade de cotas do investidor, com base na alíquota mínima da tabela regressiva (15% ou 20%, dependendo do fundo).",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-019",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -331,8 +379,10 @@
         "FIIs não distribuem rendimentos periódicos, apenas valorização de cota."
       ],
       "correct": 0,
-      "explanation": "Rendimentos periódicos distribuídos por FIIs a pessoas físicas são isentos de IR quando atendidos os requisitos legais (cotas negociadas em bolsa/mercado de balcão organizado, fundo com no mínimo 50 cotistas e cotista com menos de 10% das cotas, entre outros). Já o ganho de capital obtido na venda das cotas é tributado, geralmente à alíquota de 20%.",
-      "difficulty": "Médio"
+      "explanation": "A isenção dos rendimentos de FIIs para pessoas físicas depende do cumprimento dos requisitos legais de negociação, dispersão de cotistas e limites de participação. Ela não se estende automaticamente ao ganho na venda das cotas. Não se deve tratar toda distribuição ou todo investidor como isento.",
+      "difficulty": "Médio",
+      "bank_id": "ME-020",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -346,7 +396,9 @@
       ],
       "correct": 0,
       "explanation": "No COE de capital protegido, o investidor tem a garantia contratual de reaver, no mínimo, o capital principal no vencimento, mesmo que o cenário de mercado vinculado ao derivativo não se confirme — mas ainda existe risco de crédito do emissor, e o COE não é garantido pelo FGC.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-021",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -360,7 +412,9 @@
       ],
       "correct": 0,
       "explanation": "No regime regressivo, a alíquota de IR diminui com o tempo de permanência do recurso (de 35% para aportes de até 2 anos até 10% para prazos superiores a 10 anos), sendo mais adequado para quem pretende manter o investimento por longos períodos, sem necessidade de resgates de curto prazo.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-022",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -374,7 +428,9 @@
       ],
       "correct": 3,
       "explanation": "O benefício fiscal do PGBL (dedução de até 12% da renda bruta anual) só se aplica a quem declara pelo modelo completo e contribui para a previdência social. Para quem usa o modelo simplificado, o VGBL é mais adequado, pois no resgate a tributação incide apenas sobre os rendimentos, e não sobre o valor total aportado como ocorre no PGBL.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-023",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -388,7 +444,9 @@
       ],
       "correct": 2,
       "explanation": "O crédito consignado tende a apresentar taxas de juros mais baixas porque o pagamento é descontado diretamente da folha de pagamento ou do benefício previdenciário, reduzindo o risco de inadimplência para a instituição financeira — diferentemente do cheque especial e do rotativo do cartão, que estão entre as modalidades de crédito mais caras do mercado.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-024",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -402,7 +460,9 @@
       ],
       "correct": 1,
       "explanation": "O crédito rotativo do cartão está entre as modalidades mais caras do mercado, com juros elevados incidindo sobre o saldo devedor. Por isso, boas práticas de orientação financeira recomendam evitar sua manutenção por longos períodos, buscando linhas de crédito mais baratas para consolidar a dívida quando necessário.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-025",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -416,7 +476,9 @@
       ],
       "correct": 2,
       "explanation": "O seguro de vida inteira (vida integral) oferece cobertura permanente enquanto o segurado mantiver o pagamento dos prêmios, com possibilidade de acumulação de valor de resgate — diferente do seguro temporário, que cobre apenas um período definido e é geralmente mais barato, mas sem esse componente de acumulação.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-026",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -430,7 +492,9 @@
       ],
       "correct": 3,
       "explanation": "Na fase de acumulação de capital (early career), com horizonte de investimento mais longo e menor necessidade de liquidez imediata para despesas correntes, a orientação técnica recomenda primeiro constituir reserva de emergência e, depois, aumentar gradualmente a exposição a ativos de maior risco, aproveitando o tempo disponível para a recuperação de eventuais perdas.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-027",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -444,7 +508,9 @@
       ],
       "correct": 2,
       "explanation": "A reserva de emergência deve equilibrar liquidez e segurança, sendo recomendado manter de 3 a 6 meses de despesas (o múltiplo pode variar conforme a estabilidade de renda do cliente) em ativos de alta liquidez e baixo risco, como Tesouro Selic ou fundos DI com resgate rápido — nunca em ativos de risco ou baixa liquidez.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-028",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -458,7 +524,9 @@
       ],
       "correct": 2,
       "explanation": "O suitability exige adequação do produto ao perfil, objetivos e situação financeira do cliente. Quando há desenquadramento, o profissional deve alertar formalmente o cliente, documentar a orientação dada e, se o cliente ainda assim optar pela operação, registrar essa decisão por escrito — nunca alterar o perfil sem reavaliação apenas para viabilizar a venda.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-029",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -472,7 +540,9 @@
       ],
       "correct": 0,
       "explanation": "O fracionamento de depósitos para evitar limites de reporte (smurfing) é um indício clássico de lavagem de dinheiro. A regulamentação de PLD/FT exige que a instituição adote uma abordagem baseada em risco, com monitoramento contínuo e comunicação de operações suspeitas às autoridades competentes.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-030",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -486,7 +556,9 @@
       ],
       "correct": 1,
       "explanation": "A LGPD estabelece que o tratamento e compartilhamento de dados pessoais precisam de base legal (como consentimento específico, informado e inequívoco do titular, ou outra hipótese prevista em lei), sendo vedado o compartilhamento indiscriminado sem finalidade e transparência claras para o titular dos dados.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-031",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -500,7 +572,9 @@
       ],
       "correct": 0,
       "explanation": "Os princípios éticos do Código ANBIMA colocam o interesse do cliente e a integridade do mercado no centro da atuação profissional. O profissional certificado deve zelar pela transparência, adequação (suitability) e agir de forma diligente, mesmo diante de potenciais conflitos de interesse com metas comerciais.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-032",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -514,7 +588,9 @@
       ],
       "correct": 0,
       "explanation": "A utilização de informação privilegiada e não pública para obter vantagem em operações no mercado de capitais caracteriza insider trading (art. 27-D da Lei 6.385/76), uma infração penal grave e distinta do front running, que envolve negociar antes de executar ordens de terceiros para benefício próprio.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-033",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -528,7 +604,9 @@
       ],
       "correct": 2,
       "explanation": "Como parte da gestão financeira pessoal, é uma boa prática priorizar a quitação de dívidas cujo custo de juros seja muito superior à rentabilidade esperada dos investimentos disponíveis — o que normalmente ocorre com o rotativo do cartão de crédito, uma das linhas mais caras do mercado.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-034",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -542,7 +620,9 @@
       ],
       "correct": 2,
       "explanation": "As boas práticas de atendimento recomendam escuta ativa, reconhecimento do problema, gerenciamento transparente de expectativas e ação proativa para resolver a causa da insatisfação — construindo confiança de forma sustentável, em vez de apenas oferecer compensações que não tratam a raiz do problema.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-035",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -556,7 +636,9 @@
       ],
       "correct": 3,
       "explanation": "ESG (Environmental, Social and Governance) é a integração de critérios ambientais, sociais e de governança corporativa na análise de investimentos, buscando identificar riscos e oportunidades não captados apenas pelos indicadores financeiros tradicionais.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-036",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -570,7 +652,9 @@
       ],
       "correct": 1,
       "explanation": "Um smart contract é um código autoexecutável registrado em uma rede blockchain, que aplica automaticamente as regras contratuais predefinidas (por exemplo, liberar um pagamento) quando certas condições são satisfeitas, eliminando a necessidade de um intermediário para validar a execução.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-037",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -584,7 +668,9 @@
       ],
       "correct": 0,
       "explanation": "A tokenização é o processo de representar digitalmente, em blockchain, a propriedade (ou fração dela) de um ativo real — como imóveis, obras de arte ou ativos financeiros — permitindo negociação fracionada e, potencialmente, maior liquidez a ativos tradicionalmente pouco líquidos.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-038",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -598,7 +684,9 @@
       ],
       "correct": 1,
       "explanation": "O Open Finance é a infraestrutura regulada (Bacen e CVM) que permite o compartilhamento de dados e serviços financeiros entre instituições, sempre com o consentimento do cliente, ampliando a concorrência, a personalização de ofertas e o acesso a melhores condições de crédito e investimento.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-039",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -612,7 +700,9 @@
       ],
       "correct": 3,
       "explanation": "A IA generativa (chatbots, assistentes virtuais) amplia a eficiência e a escala do atendimento a dúvidas frequentes, mas não substitui a responsabilidade e o julgamento do profissional certificado nas etapas mais complexas do relacionamento, como a avaliação de suitability e a recomendação personalizada de produtos.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-040",
+      "origin": "Autoral · Banco A"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -625,8 +715,10 @@
         "As câmaras de compensação atuam apenas na negociação de ações na B3, sem qualquer relação com pagamentos interbancários."
       ],
       "correct": 0,
-      "explanation": "As câmaras de compensação e liquidação (como a CIP, que processa o PIX e a TED) são infraestruturas do mercado financeiro que centralizam a compensação de obrigações entre participantes, reduzindo o risco de contraparte e contribuindo para a estabilidade e a eficiência do Sistema de Pagamentos Brasileiro. Não se confundem com função de supervisão (Banco Central) nem com concessão de crédito emergencial.",
-      "difficulty": "Médio"
+      "explanation": "As câmaras de compensação e liquidação são infraestruturas do mercado financeiro que organizam a compensação e a liquidação de obrigações entre participantes, conforme o sistema e suas regras. Não se confundem com supervisão ou concessão de crédito emergencial. Os Pix interbancários são liquidados no SPI, operado pelo Banco Central; não se deve atribuir essa função genericamente à CIP.",
+      "difficulty": "Médio",
+      "bank_id": "ME-041",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -640,7 +732,9 @@
       ],
       "correct": 0,
       "explanation": "As cooperativas de crédito são sociedades de pessoas, de natureza mutualista, em que os associados são simultaneamente donos e usuários dos serviços, participando dos resultados conforme o uso dos serviços. Os bancos comerciais são sociedades de capital, com foco em resultado para acionistas. Ambos são fiscalizados pelo Banco Central e podem captar depósitos e conceder crédito.",
-      "difficulty": "Fácil"
+      "difficulty": "Fácil",
+      "bank_id": "ME-042",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -654,7 +748,9 @@
       ],
       "correct": 0,
       "explanation": "As instituições de pagamento são reguladas pelo Banco Central e podem emitir moeda eletrônica, gerenciar contas de pagamento e processar transações (incluindo PIX), mas, por definição, não podem realizar operações típicas de instituição financeira, como captação de depósitos e concessão de empréstimos com recursos próprios. Essa regulamentação fomenta a desintermediação financeira e amplia a concorrência no sistema de pagamentos.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-043",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -668,7 +764,9 @@
       ],
       "correct": 0,
       "explanation": "O FGC é uma entidade privada, mantida por contribuições das instituições associadas, que garante depósitos e certos instrumentos de captação (como CDB, LCI e LCA) até o limite vigente por CPF e por instituição. O FGCoop exerce função equivalente para os associados do sistema cooperativo de crédito. Ações e fundos de investimento não contam com essa garantia.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-044",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -682,7 +780,9 @@
       ],
       "correct": 0,
       "explanation": "Na capitalização composta, os juros incidem sobre o saldo acumulado (juros sobre juros), enquanto na simples os juros incidem sempre sobre o capital inicial, sem reinvestimento dos juros. Por isso, para prazos superiores a um período e taxa positiva, o montante da capitalização composta supera o da simples. A maioria dos produtos financeiros do mercado usa capitalização composta.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-045",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -696,7 +796,9 @@
       ],
       "correct": 0,
       "explanation": "A taxa nominal (12% ao ano, no exemplo) não considera o efeito da inflação sobre o poder de compra. A taxa real, obtida pela fórmula de Fisher — (1 + taxa nominal) / (1 + inflação) − 1 —, mostra o ganho efetivo de poder de compra, que é inferior à taxa nominal quando há inflação positiva. Além disso, a taxa informada no contrato ainda não considera a incidência de Imposto de Renda.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-046",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -710,7 +812,9 @@
       ],
       "correct": 0,
       "explanation": "A Taxa Interna de Retorno (TIR) é a taxa de desconto que zera o Valor Presente Líquido do fluxo de caixa, ou seja, iguala o valor presente das entradas futuras ao investimento inicial. Um projeto é considerado viável quando a TIR supera o custo de capital (CMPC) da empresa. VPL é expresso em valor monetário, não em taxa, e duration é um conceito de renda fixa, não de avaliação de projetos.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-047",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -724,7 +828,9 @@
       ],
       "correct": 0,
       "explanation": "A Lei de Liberdade Econômica (Lei nº 13.874/2019) tem como objetivo declarado de direitos de liberdade econômica, reduzindo burocracia e intervenção estatal excessiva, o que também impacta positivamente a entrada de novos players (como fintechs) e a desintermediação financeira. Ela não dispensa a autorização e supervisão do Banco Central sobre instituições financeiras nem revoga normas prudenciais.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-048",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -738,7 +844,9 @@
       ],
       "correct": 0,
       "explanation": "O Código Anbima de Distribuição exige que a publicidade de produtos de investimento seja transparente, não induza a erro e não prometa rentabilidade sem amparo contratual, além de exigir acesso ao material técnico complementar. Rentabilidade passada não é garantia de rentabilidade futura, devendo essa ressalva constar do material quando aplicável.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-049",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Sistema Financeiro Nacional",
@@ -752,7 +860,9 @@
       ],
       "correct": 0,
       "explanation": "As entidades fechadas de previdência complementar (EFPC ou fundos de pensão), sem fins lucrativos e acessíveis apenas a empregados de uma patrocinadora ou associados de uma instituidora, são fiscalizadas pela PREVIC. Já as entidades abertas (EAPC), que comercializam planos como PGBL e VGBL ao público em geral, são fiscalizadas pela SUSEP.",
-      "difficulty": "Fácil"
+      "difficulty": "Fácil",
+      "bank_id": "ME-050",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -766,7 +876,9 @@
       ],
       "correct": 0,
       "explanation": "O CRA, assim como o CRI, é emitido por companhias securitizadoras e é isento de IR para pessoa física, mas não conta com garantia do FGC — o investidor assume o risco de crédito dos recebíveis do agronegócio que sustentam a operação, o que exige análise cuidadosa da qualidade dos créditos e do emissor/originador.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-051",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -780,7 +892,9 @@
       ],
       "correct": 0,
       "explanation": "O rating de crédito, atribuído por agências como Moody's, S&P e Fitch, mede a capacidade e a probabilidade de uma empresa honrar suas obrigações. Emissores com rating mais baixo (maior risco de inadimplência) precisam oferecer taxas de juros mais altas para compensar o investidor pelo risco adicional assumido — esse é o chamado spread de crédito.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-052",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -794,7 +908,9 @@
       ],
       "correct": 0,
       "explanation": "A poupança segue a chamada 'data de aniversário': o rendimento é creditado mensalmente no mesmo dia do mês em que o depósito foi feito. Quem resgata antes de completar o mês perde o rendimento daquele período. Atualmente, a remuneração é de 0,5% ao mês mais a TR quando a Selic é superior a 8,5% ao ano, ou 70% da Selic mais a TR quando a Selic é igual ou inferior a esse patamar.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-053",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -808,12 +924,14 @@
       ],
       "correct": 0,
       "explanation": "A TR (Taxa Referencial) é calculada a partir da taxa média dos CDBs pré-fixados de uma amostra de bancos, e compõe a fórmula de remuneração da poupança e de alguns contratos habitacionais. É distinta da TLP (Taxa de Longo Prazo), que passou a ser usada como referência nos financiamentos do BNDES a partir de 2018, e do IPCA, que mede a inflação ao consumidor.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-054",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
       "pd": "2.1.1.2.4",
-      "context": "Um investidor vendeu ações no mercado à vista da bolsa, apurando ganho líquido de R$ 15.000 em um único mês, sem qualquer outra venda no período. Sobre a tributação dessa operação, é correto afirmar que:",
+      "context": "Uma pessoa física realizou vendas comuns de ações no mercado à vista da bolsa, sem day trade, totalizando R$ 15.000 em um mês, com ganho de R$ 2.000 e sem outras vendas de ações no período. Considerando o limite mensal de isenção de R$ 20.000 em vendas para essa hipótese, é correto afirmar que:",
       "options": [
         "O ganho está isento de Imposto de Renda, pois o total de vendas de ações no mercado à vista no mês foi igual ou inferior a R$ 20.000, limite de isenção previsto na legislação para pessoa física (o benefício não se aplica a operações de day trade).",
         "O ganho é integralmente tributado à alíquota de 15%, independentemente do valor total de vendas no mês.",
@@ -822,7 +940,9 @@
       ],
       "correct": 0,
       "explanation": "A legislação prevê isenção de IR sobre ganhos líquidos obtidos em operações comuns (não day trade) no mercado à vista de ações, quando o total das vendas no mês não superar R$ 20.000. Esse limite é aplicado ao volume de vendas no período, não ao ganho, e não se aplica a operações de day trade, que são sempre tributadas independentemente do valor.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-055",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -836,7 +956,9 @@
       ],
       "correct": 0,
       "explanation": "A legislação de renda variável permite a compensação de perdas com ganhos líquidos apurados em operações de mesma natureza em meses subsequentes (por exemplo, perdas em operações comuns só compensam ganhos de operações comuns; perdas em day trade só compensam ganhos de day trade), reduzindo a base de cálculo do IR devido, desde que devidamente apuradas e informadas na declaração anual de ajuste.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-056",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -850,35 +972,41 @@
       ],
       "correct": 0,
       "explanation": "No COE modalidade capital em risco, o investidor pode ter perdas sobre o capital investido caso o cenário de mercado embutido no derivativo não se realize — diferentemente do capital protegido, que garante a devolução, no mínimo, do valor principal no vencimento. Nenhuma das duas modalidades é garantida pelo FGC, e ambas mantêm exposição ao risco de crédito do emissor.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-057",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
-      "pd": "2.1.2.2.15",
-      "context": "Segundo a Resolução CVM nº 175, um fundo de investimento pode cobrar diferentes tipos de encargos de seus cotistas. Sobre as vedações previstas na norma quanto à cobrança de taxas, é correto afirmar que:",
+      "pd": "2.1.2",
+      "context": "Uma classe de fundo prevê taxa de administração e taxa de performance em seus documentos. Uma cliente acredita que a segunda cobrança significa garantia de superar o benchmark. Qual é o esclarecimento adequado?",
       "options": [
-        "É vedada a cobrança simultânea de taxa de administração e taxa de performance para fundos classificados como de gestão passiva que buscam apenas replicar um índice de referência, salvo exceções previstas na regulamentação.",
-        "A cobrança de taxa de performance é obrigatória em todos os fundos de investimento, independentemente da estratégia adotada.",
-        "A taxa de administração deixou de existir com a Resolução CVM 175, sendo substituída integralmente pela taxa de performance.",
-        "Fundos de ações ativos estão proibidos de cobrar qualquer tipo de taxa de performance, mesmo superando o benchmark."
+        "A performance é uma remuneração condicionada à regra prevista, e não promessa de resultado; é preciso conferir benchmark, metodologia, periodicidade e demais condições.",
+        "A existência de taxa de performance obriga o gestor a restituir o capital se o benchmark não for superado.",
+        "A taxa de administração só é cobrada quando a classe supera o benchmark, sendo idêntica à performance.",
+        "O regulamento pode ser dispensado da análise se a rentabilidade do mês anterior foi positiva."
       ],
       "correct": 0,
-      "explanation": "A regulamentação de fundos veda, como regra, a cobrança de taxa de performance em fundos de gestão passiva (indexados), já que esses fundos não buscam superar um benchmark, apenas replicá-lo, o que tornaria essa cobrança incompatível com a estratégia. Fundos ativos (como fundos de ações) podem cobrar taxa de performance quando há superação de um parâmetro de referência, desde que observadas as regras de metodologia e linha de água.",
-      "difficulty": "Difícil"
+      "explanation": "Taxa de performance não é garantia de retorno nem obrigação de indenizar por desempenho inferior. Sua existência e cálculo dependem das condições e regras aplicáveis à classe. Taxa de administração é uma remuneração distinta; os documentos e os custos precisam ser analisados.",
+      "difficulty": "Difícil",
+      "bank_id": "ME-058",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
-      "pd": "2.1.2.2.18",
-      "context": "Uma classe de fundo estruturada segundo a Resolução CVM nº 175 apresenta patrimônio líquido negativo após perdas expressivas em derivativos. Sobre essa situação, é correto afirmar que:",
+      "pd": "2.1.2.2.25",
+      "context": "Uma classe de fundo com responsabilidade dos cotistas limitada ao valor subscrito registra patrimônio líquido negativo após perdas. Qual explicação evita confundir limitação de responsabilidade com garantia contra perdas?",
       "options": [
-        "O gestor e o administrador devem adotar as medidas previstas na regulamentação e no regulamento do fundo para regularizar a situação, podendo haver aporte de recursos pelos prestadores de serviço responsáveis, conforme apuração de responsabilidade, já que o patrimônio líquido negativo representa uma situação anômala que deve ser sanada.",
-        "O patrimônio líquido negativo é uma situação absolutamente normal e recorrente em qualquer fundo de investimento, sem necessidade de qualquer ação corretiva.",
-        "Nesse caso, o cotista deve automaticamente aportar recursos adicionais para cobrir a diferença negativa, seja qual for o motivo da perda.",
-        "A CVM proíbe qualquer fundo de utilizar derivativos, justamente para evitar esse tipo de situação."
+        "A limitação não impede perdas; devem ser seguidos os procedimentos aplicáveis à classe, sem presumir aporte adicional automático do cotista nem garantia de recomposição pelos prestadores.",
+        "A limitação obriga o administrador a assegurar o valor integral aplicado por todos os cotistas, qualquer que seja a causa da perda.",
+        "O patrimônio negativo elimina a limitação e exige do cotista aporte adicional ilimitado em qualquer situação.",
+        "A limitação de responsabilidade impede contabilmente que os ativos da classe percam valor."
       ],
       "correct": 0,
-      "explanation": "O patrimônio líquido negativo é uma situação atípica e indesejada, geralmente associada a falhas de gestão, uso inadequado de derivativos ou eventos extremos de mercado. A regulamentação prevê procedimentos para apuração de responsabilidade e regularização, podendo haver necessidade de aporte por parte dos prestadores de serviços responsáveis pela gestão de risco, e não automaticamente pelos cotistas.",
-      "difficulty": "Difícil"
+      "explanation": "Responsabilidade limitada não é proteção do capital investido. A situação exige os procedimentos regulatórios e contratuais pertinentes, incluindo eventual resolução ou insolvência. Perda de mercado não demonstra, por si só, falha de prestador nem cria garantia automática de indenização ou recomposição patrimonial.",
+      "difficulty": "Difícil",
+      "bank_id": "ME-059",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -892,7 +1020,9 @@
       ],
       "correct": 0,
       "explanation": "FIIs de tijolo investem diretamente em imóveis físicos (lajes corporativas, shoppings, galpões logísticos) e sofrem risco de vacância e de ciclo imobiliário. FIIs de papel investem em títulos de recebíveis imobiliários (como CRIs), estando mais expostos ao risco de crédito dos devedores e à sensibilidade a juros/inflação que remuneram esses papéis. Nenhum dos dois tipos conta com garantia do FGC.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-060",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -906,7 +1036,9 @@
       ],
       "correct": 0,
       "explanation": "A portabilidade de previdência complementar permite a transferência de recursos entre planos (inclusive de instituições diferentes, respeitada a mesma modalidade — PGBL para PGBL ou VGBL para VGBL), sem incidência de IR no momento da portabilidade e preservando o regime tributário e o tempo de permanência já acumulado, o que a diferencia do resgate, que gera tributação imediata.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-061",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -920,7 +1052,9 @@
       ],
       "correct": 0,
       "explanation": "A Renda Mensal Vitalícia é uma das modalidades de recebimento do benefício de previdência complementar, na qual o participante recebe uma renda mensal por toda a sua vida, cessando o pagamento no falecimento (a menos que haja previsão contratual de reversão a beneficiários). Existem outras modalidades, como renda temporária, renda vitalícia com prazo mínimo garantido e resgate total ou parcial, cabendo ao participante escolher conforme seu planejamento.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-062",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -934,7 +1068,9 @@
       ],
       "correct": 0,
       "explanation": "O CDC é uma linha voltada ao financiamento de bens específicos (veículos, eletrodomésticos etc.), frequentemente com alienação fiduciária do próprio bem como garantia, o que tende a reduzir o custo em relação a linhas sem garantia, como o cheque especial. O capital de giro é destinado ao financiamento das operações correntes da empresa, e o consórcio depende de sorteio ou lance para a contemplação, não sendo comparável a um financiamento direto.",
-      "difficulty": "Fácil"
+      "difficulty": "Fácil",
+      "bank_id": "ME-063",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -948,7 +1084,9 @@
       ],
       "correct": 0,
       "explanation": "No consórcio, não há cobrança de juros (apenas taxa de administração e eventual fundo de reserva), mas o acesso ao crédito depende de contemplação por sorteio ou lance, podendo levar tempo. No financiamento tradicional, o crédito é liberado de forma imediata, mas há incidência de juros sobre o saldo devedor ao longo do prazo contratado — uma diferença central na escolha entre as modalidades.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-064",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -962,21 +1100,25 @@
       ],
       "correct": 0,
       "explanation": "A regulamentação do Banco Central permite a cobrança de tarifas por serviços bancários, desde que previstas em contrato e divulgadas de forma transparente na tabela de tarifas, respeitando regras específicas — como a existência de pacotes de serviços essenciais e, em certos casos, contas que oferecem serviços básicos sem custo (por exemplo, para quem realiza poucas transações mensais).",
-      "difficulty": "Fácil"
+      "difficulty": "Fácil",
+      "bank_id": "ME-065",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Produtos do mercado financeiro",
-      "pd": "2.5.3",
-      "context": "Um casal contrata um financiamento imobiliário e o banco exige a contratação de um seguro que garanta a quitação do saldo devedor em caso de morte ou invalidez permanente de um dos financiados. Esse tipo de seguro é conhecido como:",
+      "pd": "2.5.2.3",
+      "context": "Ao contratar um empréstimo pessoal, um cliente recebe a oferta facultativa de seguro cuja finalidade é amortizar ou quitar a dívida vinculada em caso de evento previsto na apólice. Qual modalidade tem essa finalidade?",
       "options": [
-        "Seguro prestamista, vinculado à quitação de uma dívida específica em caso de sinistro coberto, geralmente exigido em financiamentos e operações de crédito.",
+        "Seguro prestamista, vinculado à dívida, respeitados os eventos cobertos, o capital segurado e as condições contratadas.",
         "Seguro de vida inteira (whole life), que acumula valor de resgate ao longo do tempo e não está vinculado a nenhuma dívida específica.",
         "Seguro residencial, que cobre exclusivamente danos materiais ao imóvel financiado, como incêndio.",
         "Seguro de vida temporário (term life), que nunca pode ser vinculado a operações de crédito."
       ],
       "correct": 0,
-      "explanation": "O seguro prestamista tem como finalidade específica a quitação do saldo devedor de um financiamento ou empréstimo em caso de morte ou invalidez do segurado, sendo comumente exigido em financiamentos imobiliários e de veículos. Difere do seguro de vida inteira (cobertura permanente com acumulação de valor) e do seguro residencial (cobre danos ao imóvel, não a dívida em si).",
-      "difficulty": "Fácil"
+      "explanation": "O seguro prestamista visa amortizar ou quitar a obrigação vinculada, conforme os riscos cobertos, limites e condições contratadas. Não se deve confundi-lo com seguro de danos ao bem nem generalizar sua obrigatoriedade. A proposta do enunciado é facultativa.",
+      "difficulty": "Fácil",
+      "bank_id": "ME-066",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -990,7 +1132,9 @@
       ],
       "correct": 0,
       "explanation": "Na fase de transição/distribuição de renda, que antecede ou coincide com a aposentadoria, a orientação técnica recomenda reduzir gradualmente a exposição a ativos voláteis, já que o horizonte para recuperação de perdas é menor e a necessidade de liquidez para sustento é mais próxima, priorizando preservação de capital e geração de renda previsível.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-067",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1004,7 +1148,9 @@
       ],
       "correct": 0,
       "explanation": "O orçamento pessoal (fluxo de caixa) é a base do planejamento financeiro, pois evidencia a capacidade de poupança do cliente — a diferença entre o que ele recebe e o que gasta —, informação essencial para definir metas de investimento realistas e sustentáveis, antes mesmo de discutir perfil de risco ou valor de reserva de emergência.",
-      "difficulty": "Fácil"
+      "difficulty": "Fácil",
+      "bank_id": "ME-068",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1018,7 +1164,9 @@
       ],
       "correct": 0,
       "explanation": "O balanço patrimonial pessoal segue a mesma lógica contábil de uma empresa: relaciona ativos (bens e direitos) e passivos (obrigações e dívidas), sendo o patrimônio líquido a diferença entre eles. Esse instrumento complementa o orçamento (fluxo de caixa), oferecendo uma visão estática da posição financeira do cliente em determinado momento.",
-      "difficulty": "Fácil"
+      "difficulty": "Fácil",
+      "bank_id": "ME-069",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1032,7 +1180,9 @@
       ],
       "correct": 0,
       "explanation": "O processo de planejamento financeiro pessoal segue etapas estruturadas: levantamento de dados e objetivos, análise da situação financeira, elaboração de um plano de ação com metas específicas e prazos, implementação das recomendações e, por fim, monitoramento e revisão periódica. Pular a etapa de elaboração de um plano estruturado leva a recomendações desalinhadas aos objetivos do cliente.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-070",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1046,7 +1196,9 @@
       ],
       "correct": 0,
       "explanation": "Rendimentos de aluguel recebidos de pessoa física são tributáveis e sujeitos ao recolhimento mensal obrigatório via carnê-leão, sendo posteriormente informados na declaração de ajuste anual. Essa classificação é diferente de rendimentos isentos (como dividendos) e de rendimentos tributados exclusivamente na fonte (como algumas aplicações financeiras), sendo importante que o profissional oriente corretamente essa distinção ao cliente.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-071",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1060,7 +1212,9 @@
       ],
       "correct": 0,
       "explanation": "O processo de suitability deve considerar de forma integrada todas as informações relevantes do cliente — objetivos, horizonte de tempo, situação financeira e tolerância ao risco — e não apenas uma resposta isolada. Quando há aparente contradição, a boa prática recomenda ponderar o conjunto de fatores (como o horizonte de curto prazo, que exige maior liquidez e menor volatilidade) na recomendação final, podendo inclusive dialogar com o cliente para esclarecer a inconsistência.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-072",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1074,7 +1228,9 @@
       ],
       "correct": 0,
       "explanation": "O spoofing consiste na inserção de ordens sem intenção genuína de execução (geralmente canceladas rapidamente), com o objetivo de criar uma falsa impressão de oferta ou demanda e manipular o preço de um ativo — prática vedada e distinta de front running (uso de informação de ordem de terceiro para benefício próprio), churning (giro excessivo de carteira) e insider trading (uso de informação privilegiada).",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-073",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1088,7 +1244,9 @@
       ],
       "correct": 0,
       "explanation": "O churning caracteriza-se pela movimentação excessiva e desnecessária da carteira de um cliente, motivada primariamente pelo interesse do profissional em gerar comissões, e não pelo interesse do investidor — violando diretamente os princípios éticos que colocam o interesse do cliente no centro da atividade de distribuição e assessoria de investimentos.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-074",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1102,7 +1260,9 @@
       ],
       "correct": 0,
       "explanation": "O sigilo bancário, regulado pela Lei Complementar nº 105/2001, protege as informações financeiras dos clientes, mas admite exceções expressamente previstas em lei — como decisão judicial, requisição de CPI nos termos legais e a comunicação de operações suspeitas ao órgão competente no contexto da prevenção à lavagem de dinheiro e financiamento do terrorismo (PLD/FT), sem que isso configure quebra indevida de sigilo.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-075",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -1116,7 +1276,9 @@
       ],
       "correct": 0,
       "explanation": "Os Princípios para o Investimento Responsável (PRI) constituem uma iniciativa internacional que orienta gestores e investidores institucionais a incorporar fatores ambientais, sociais e de governança (ESG) em suas análises e decisões de investimento, promovendo maior transparência — sem que isso implique restrição a classes específicas de ativos ou garantia de rentabilidade.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-076",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -1130,7 +1292,9 @@
       ],
       "correct": 0,
       "explanation": "A regulamentação estabelece exigências de transparência para fundos que se autodenominam sustentáveis (ou usam termos similares), a fim de evitar o greenwashing — prática de atribuir uma imagem de sustentabilidade sem correspondência real na política de investimento —, exigindo divulgação clara dos critérios ESG efetivamente adotados na gestão da carteira.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-077",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -1144,7 +1308,9 @@
       ],
       "correct": 0,
       "explanation": "As exchanges descentralizadas (DEX) operam por meio de contratos inteligentes em redes blockchain, permitindo negociação direta entre usuários sem um intermediário centralizado custodiando os recursos — um dos pilares do movimento DeFi (finanças descentralizadas). Corretoras centralizadas, por sua vez, geralmente custodiam os ativos e atuam como intermediárias das operações, estando mais sujeitas a estruturas regulatórias tradicionais.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-078",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -1158,7 +1324,9 @@
       ],
       "correct": 0,
       "explanation": "O DREX é o projeto de moeda digital de banco central (CBDC, na sigla em inglês) do Banco Central do Brasil, que utiliza tecnologia de registro distribuído (DLT) para explorar novas formas de liquidação e programabilidade de operações financeiras, sendo uma iniciativa distinta de criptomoedas descentralizadas e de stablecoins privadas, e sem substituir o PIX ou o papel-moeda no curto prazo.",
-      "difficulty": "Médio"
+      "difficulty": "Médio",
+      "bank_id": "ME-079",
+      "origin": "Autoral · Banco B"
     },
     {
       "theme": "Inovação e desenvolvimento de mercado",
@@ -1172,7 +1340,889 @@
       ],
       "correct": 0,
       "explanation": "A IA generativa concentra-se na criação de novos conteúdos (texto, imagem, código, entre outros) a partir de padrões aprendidos previamente, enquanto o conceito de IA regenerativa está associado à capacidade do sistema de aprender de forma contínua e se adaptar autonomamente com base em novos dados e retroalimentação, aprimorando-se de maneira iterativa ao longo do tempo — uma distinção conceitual relevante no debate sobre o uso de IA no mercado financeiro.",
-      "difficulty": "Difícil"
+      "difficulty": "Difícil",
+      "bank_id": "ME-080",
+      "origin": "Autoral · Banco B"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.1.1.1.2",
+      "topic": "Órgãos normativos e supervisores",
+      "pd_verified": true,
+      "context": "Uma profissional prepara treinamento para novos atendentes. Ela precisa distinguir quem estabelece diretrizes gerais para os seguros privados de quem supervisiona as seguradoras. Qual associação deve constar do material?",
+      "options": [
+        "CNSP como órgão normativo do setor e Susep como supervisora das entidades sob sua competência.",
+        "Susep como órgão normativo máximo e CVM como supervisora das seguradoras.",
+        "CMN como supervisor direto das seguradoras e CNSP como entidade de autorregulação privada.",
+        "CNPC como órgão normativo dos seguros privados e Previc como supervisora das seguradoras."
+      ],
+      "correct": 0,
+      "explanation": "O CNSP estabelece diretrizes e normas da política de seguros privados, enquanto a Susep supervisiona as entidades de seu âmbito. A Previc atua sobre previdência complementar fechada; o CNPC integra esse outro segmento. A CVM supervisiona o mercado de valores mobiliários.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-081"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.2.2",
+      "topic": "Intermediação e desintermediação",
+      "pd_verified": true,
+      "context": "Uma indústria compara um empréstimo bancário com uma emissão de debêntures que investidores adquirirão por meio de uma distribuidora. O diretor acredita que a presença da distribuidora torna as duas captações idênticas. Como esclarecer a diferença?",
+      "options": [
+        "No empréstimo, o banco assume o crédito contra a indústria; na emissão, os investidores passam a ser credores da emissora, mesmo havendo distribuição intermediada.",
+        "Na emissão, a distribuidora substitui a indústria como devedora dos títulos adquiridos pelos investidores.",
+        "No empréstimo, os depositantes se tornam credores diretos da indústria, sem exposição ao banco.",
+        "A contratação de uma distribuidora transfere ao Banco Central o risco de inadimplência das debêntures."
+      ],
+      "correct": 0,
+      "explanation": "A distinção está em quem capta e assume a obrigação financeira. No crédito bancário, o banco concede o empréstimo; na emissão de dívida, a empresa deve aos titulares dos títulos. A participação de uma distribuidora na colocação não a transforma automaticamente em devedora ou garantidora.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-082"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.3.4.1",
+      "topic": "Retorno nominal e real",
+      "pd_verified": true,
+      "context": "Em uma simulação, uma aplicação rendeu 10,25% em um ano e a inflação do mesmo período foi 5%. Desconsiderando tributos e custos, qual foi o aumento aproximado do poder de compra do investidor?",
+      "options": [
+        "5,00%.",
+        "5,25%.",
+        "10,25%.",
+        "15,25%."
+      ],
+      "correct": 0,
+      "explanation": "O retorno real é (1 + 0,1025) / (1 + 0,05) − 1 = 0,05, ou 5%. Subtrair diretamente a inflação gera apenas uma aproximação; somá-la ou usar o retorno nominal não mede o ganho de poder de compra.",
+      "difficulty": "Difícil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-083"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.3.2",
+      "topic": "Taxas equivalentes",
+      "pd_verified": true,
+      "context": "Uma cliente vê uma taxa efetiva de 1% ao mês, com capitalização composta, em uma simulação de 12 meses. Para comparar com outra proposta expressa ao ano, sem custos e tributos, qual taxa anual equivalente deve utilizar?",
+      "options": [
+        "Aproximadamente 12,68% ao ano.",
+        "Exatamente 12,00% ao ano.",
+        "Aproximadamente 1,12% ao ano.",
+        "Exatamente 13,00% ao ano."
+      ],
+      "correct": 0,
+      "explanation": "A taxa anual equivalente é (1,01)^12 − 1, aproximadamente 12,68%. Multiplicar 1% por 12 obtém uma taxa proporcional, não a taxa efetiva equivalente em capitalização composta. As unidades de tempo devem ser compatibilizadas.",
+      "difficulty": "Difícil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-084"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.3.3.2.3",
+      "topic": "Valor presente",
+      "pd_verified": true,
+      "context": "Para quitar uma despesa de R$ 11.000 daqui a um ano, um cliente pode aplicar hoje a uma taxa efetiva hipotética de 10% ao ano. Sem impostos ou custos e mantendo a aplicação até a data, de quanto precisa dispor hoje?",
+      "options": [
+        "R$ 10.000.",
+        "R$ 9.900.",
+        "R$ 11.000.",
+        "R$ 12.100."
+      ],
+      "correct": 0,
+      "explanation": "O valor presente é 11.000 / 1,10 = R$ 10.000. O desconto correto divide o valor futuro pelo fator de acumulação; retirar 10% diretamente de R$ 11.000 não é equivalente a descontar pela taxa de 10%.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-085"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.3.7",
+      "topic": "Sistema de Amortização Constante",
+      "pd_verified": true,
+      "context": "Um financiamento hipotético de R$ 12.000 será pago em 10 meses pelo SAC, com juros de 1% ao mês sobre o saldo devedor no início de cada período. Sem tarifas ou seguros, qual será a primeira prestação?",
+      "options": [
+        "R$ 1.320.",
+        "R$ 1.200.",
+        "R$ 1.212.",
+        "R$ 1.440."
+      ],
+      "correct": 0,
+      "explanation": "No SAC, a amortização é constante: 12.000 / 10 = R$ 1.200. Os primeiros juros são 1% de R$ 12.000, ou R$ 120. Assim, a primeira prestação é R$ 1.320; as seguintes caem porque os juros incidem sobre saldo menor.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-086"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.3.8.1",
+      "topic": "Desconto bancário simples",
+      "pd_verified": true,
+      "context": "Uma empresa antecipa um recebível de valor nominal de R$ 10.000, com vencimento em três meses. O contrato da simulação utiliza desconto bancário simples de 2% ao mês sobre o valor nominal, sem outros encargos. Qual valor líquido será recebido?",
+      "options": [
+        "R$ 9.400.",
+        "R$ 9.411,76.",
+        "R$ 9.800.",
+        "R$ 10.600."
+      ],
+      "correct": 0,
+      "explanation": "O desconto comercial simples é 10.000 × 0,02 × 3 = R$ 600. O valor recebido é 10.000 − 600 = R$ 9.400. Dividir por 1,06 corresponderia a outra modalidade de desconto; usar apenas um mês ignora o prazo contratado.",
+      "difficulty": "Difícil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-087"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.2.4.2",
+      "topic": "Instrumentos de política monetária",
+      "pd_verified": true,
+      "context": "O Banco Central reduz o recolhimento compulsório de determinada modalidade de depósito. Uma cliente pergunta como essa medida pode afetar a oferta de crédito. Qual explicação reconhece o mecanismo e seus limites?",
+      "options": [
+        "Pode liberar liquidez e favorecer a oferta de crédito, mas os empréstimos também dependem de demanda, risco e decisões das instituições.",
+        "Obriga os bancos a reduzir imediatamente todas as taxas de empréstimo no mesmo percentual da redução do compulsório.",
+        "Retira recursos disponíveis dos bancos, porque aumenta a parcela dos depósitos que deve permanecer recolhida.",
+        "Substitui a análise de crédito dos clientes, pois os recursos liberados passam a ter garantia automática do Tesouro."
+      ],
+      "correct": 0,
+      "explanation": "O compulsório vincula parcela dos recursos captados. Sua redução pode ampliar a liquidez disponível, mas isso não garante concessão de crédito nem redução automática de taxas. O resultado depende também da demanda e da avaliação de risco.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-088"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.4.7",
+      "topic": "Portabilidade de custódia",
+      "pd_verified": true,
+      "context": "Um investidor deseja transferir a custódia de ações de sua titularidade para outra instituição, sem vender os ativos nem mudar seu titular. Antes de iniciar, ele pergunta o que deve conferir. Qual orientação é adequada?",
+      "options": [
+        "Verificar procedimentos, dados de titularidade, elegibilidade e eventuais pendências; transferir custódia não equivale a vender e recomprar.",
+        "Vender as ações obrigatoriamente antes de solicitar a transferência, pois a custódia não pode mudar com a posição mantida.",
+        "Escolher um novo titular para os ativos, porque transferir custódia exige mudança de propriedade.",
+        "Usar a cotação histórica de compra como garantia do valor que as ações terão depois da transferência."
+      ],
+      "correct": 0,
+      "explanation": "A portabilidade de custódia, nas condições descritas, mantém os ativos e a titularidade. Procedimentos e pendências precisam ser verificados. A operação não implica venda obrigatória, alteração de proprietário ou garantia de preço de mercado.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-089"
+    },
+    {
+      "theme": "Sistema Financeiro Nacional",
+      "pd": "1.4.12",
+      "topic": "Transparência na remuneração da distribuição",
+      "pd_verified": true,
+      "context": "Uma cliente encontra dois canais que oferecem a mesma aplicação e pergunta se o atendimento chamado de 'gratuito' significa ausência de remuneração. Qual resposta é mais transparente?",
+      "options": [
+        "Pode haver remuneração indireta na distribuição; devem ser explicados o modelo aplicável, os custos e os potenciais conflitos, conforme as regras do canal.",
+        "A ausência de cobrança avulsa significa que nenhuma parte da cadeia recebe remuneração pela distribuição.",
+        "A remuneração só interessa ao cliente se for debitada separadamente no extrato bancário.",
+        "A informação pode ser omitida se o produto tiver rentabilidade histórica superior ao de um concorrente."
+      ],
+      "correct": 0,
+      "explanation": "O atendimento pode ser remunerado de modo direto ou indireto. A transparência exige explicar o modelo e os conflitos pertinentes, e não inferir gratuidade total pela ausência de débito avulso. Rentabilidade histórica não substitui a informação sobre custos.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-090"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.1.2",
+      "topic": "Preço e taxa de títulos prefixados",
+      "pd_verified": true,
+      "context": "Um cliente comprou um título prefixado com vencimento em cinco anos. Um mês depois, as taxas exigidas pelo mercado para títulos equivalentes subiram. Ele precisa vender antes do vencimento. Mantidos os demais fatores, o que tende a acontecer?",
+      "options": [
+        "O preço de mercado tende a cair; vender antes do vencimento pode gerar retorno diferente da taxa contratada.",
+        "O preço tende a subir para compensar o comprador pela elevação das taxas disponíveis no mercado.",
+        "O preço fica inalterado, porque a taxa contratada impede oscilações antes do vencimento.",
+        "O emissor deve recomprar pelo valor aplicado corrigido pela nova taxa de mercado."
+      ],
+      "correct": 0,
+      "explanation": "Preço e taxa de desconto têm relação inversa. Quando o mercado passa a exigir taxa maior, o valor presente dos pagamentos fixados tende a cair. A taxa contratada não garante o mesmo retorno em uma venda antecipada.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-091"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.1.2",
+      "topic": "Fluxo de recebimento de títulos públicos",
+      "pd_verified": true,
+      "context": "Uma cliente quer uma sequência de recebimentos para complementar renda em data futura, e não apenas um único pagamento final. Ao apresentar títulos do Tesouro com estruturas de fluxo distintas, qual informação deve orientar a escolha?",
+      "options": [
+        "As datas, a duração e a forma de atualização dos recebimentos, além dos riscos e das regras para saída antes do horizonte planejado.",
+        "Somente a taxa anual informada, pois o calendário de recebimentos não altera o planejamento financeiro.",
+        "Somente o nome do título, porque qualquer título público paga renda mensal desde a aquisição.",
+        "A taxa do último mês, substituindo a necessidade de avaliar o prazo de acumulação e o fluxo de pagamentos."
+      ],
+      "correct": 0,
+      "explanation": "O produto deve combinar com o fluxo de caixa necessário ao objetivo. Há diferenças entre acumulação, pagamentos periódicos e pagamento único. A condição de título público não torna todos os fluxos iguais nem elimina os efeitos de uma venda antecipada.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-092"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.1.7",
+      "topic": "Classificação de risco de crédito",
+      "pd_verified": true,
+      "context": "Um relatório melhora a classificação de risco de uma empresa emissora de dívida. Um cliente conclui que a debênture ficou 'sem risco'. Qual esclarecimento é adequado?",
+      "options": [
+        "A classificação expressa uma avaliação de risco de crédito e pode mudar; não constitui garantia de pagamento nem elimina risco de preço e liquidez.",
+        "A melhora do rating transfere a responsabilidade de pagamento da empresa para a agência classificadora.",
+        "O rating passa a garantir o preço de venda da debênture até o vencimento.",
+        "A melhora permite dispensar a análise de prazo e concentração, pois o risco de perda foi eliminado."
+      ],
+      "correct": 0,
+      "explanation": "Rating é uma opinião de risco de crédito, sujeita a revisão, e não seguro ou garantia. Uma melhora pode afetar a percepção de risco, mas não elimina inadimplência possível, oscilação de preço ou dificuldade de venda.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-093"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.1.4",
+      "topic": "Mercado primário e secundário de dívida",
+      "pd_verified": true,
+      "context": "Uma companhia captou recursos ao emitir debêntures. Meses depois, uma investidora vende parte de seus títulos a outro investidor no mercado secundário. Quem recebe os recursos dessa segunda negociação, desconsiderando custos?",
+      "options": [
+        "A investidora vendedora; a companhia não recebe nova captação por essa troca entre investidores.",
+        "A companhia emissora, porque cada negociação secundária corresponde a uma nova emissão de dívida.",
+        "A companhia e a investidora em partes iguais, independentemente do preço negociado.",
+        "A agência de classificação, que redistribui os valores à companhia após atualizar o risco."
+      ],
+      "correct": 0,
+      "explanation": "Na emissão primária, os recursos captados destinam-se à emissora, conforme a operação. Na negociação secundária, o comprador paga ao titular que vende o título; a emissora permanece devedora das obrigações contratadas.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-094"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.2.2.2.6",
+      "topic": "Eventos societários: desdobramento",
+      "pd_verified": true,
+      "context": "Uma investidora possui 300 ações cotadas a R$ 90 antes de um desdobramento de uma ação em três. Considerando apenas o efeito mecânico do evento, sem oscilação de mercado, como fica a posição?",
+      "options": [
+        "900 ações a aproximadamente R$ 30 cada, mantendo R$ 27.000.",
+        "300 ações a aproximadamente R$ 30 cada, totalizando R$ 9.000.",
+        "900 ações a aproximadamente R$ 90 cada, totalizando R$ 81.000.",
+        "100 ações a aproximadamente R$ 270 cada, mantendo R$ 27.000."
+      ],
+      "correct": 0,
+      "explanation": "O desdobramento multiplica a quantidade por três e divide o preço teórico por três. O valor econômico da posição não aumenta só por esse ajuste. Reduzir a quantidade corresponderia a um grupamento, não ao evento descrito.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-095"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.2.2.2.8",
+      "topic": "Direito de subscrição e diluição",
+      "pd_verified": true,
+      "context": "Um acionista detém 100 das 1.000 ações de uma companhia. A empresa emitirá mais 500 ações da mesma espécie, oferecendo subscrição proporcional aos atuais acionistas. Quantas novas ações ele deve subscrever para manter sua participação de 10%, sem outras alterações?",
+      "options": [
+        "50 ações.",
+        "10 ações.",
+        "100 ações.",
+        "150 ações."
+      ],
+      "correct": 0,
+      "explanation": "Ele possui 100 / 1.000 = 10%. Para manter a proporção, deve adquirir 10% das 500 novas ações, ou 50. Passará a deter 150 de 1.500 ações. Sem subscrever, sua participação percentual seria diluída.",
+      "difficulty": "Difícil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-096"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.2.2.4",
+      "topic": "Classes e subclasses de fundos",
+      "pd_verified": true,
+      "context": "Uma investidora compara duas classes de um mesmo fundo com carteiras distintas. Uma delas teve prejuízo. O atendimento precisa explicar a diferença entre classes com patrimônio segregado e subclasses. Qual afirmação está correta?",
+      "options": [
+        "Cada classe possui patrimônio segregado; subclasses de uma mesma classe compartilham o patrimônio dessa classe, embora possam ter condições diferenciadas previstas nas regras.",
+        "Cada subclasse tem patrimônio separado, mas as classes respondem indistintamente por todas as obrigações do fundo.",
+        "Classes e subclasses são apenas nomes comerciais e não têm efeito sobre a organização patrimonial.",
+        "A segregação impede qualquer classe de registrar perda com seus próprios investimentos."
+      ],
+      "correct": 0,
+      "explanation": "A segregação patrimonial ocorre entre classes. Subclasses integram a mesma classe, podendo diferenciar condições como público-alvo e taxas, nos limites aplicáveis. Segregação não é proteção contra perdas da própria carteira.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-097"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.2.2.19.3",
+      "topic": "Prestadores de serviços dos fundos",
+      "pd_verified": true,
+      "context": "O regulamento de uma classe identifica administrador fiduciário e gestor. Uma cliente pergunta quem toma as decisões de compra e venda dos ativos, dentro da política de investimento. Qual resposta é adequada?",
+      "options": [
+        "O gestor toma as decisões de investimento; o administrador fiduciário exerce suas atribuições próprias de administração e funcionamento da estrutura.",
+        "O administrador fiduciário define cada operação e o gestor apenas distribui as cotas ao público.",
+        "O custodiante escolhe os ativos e garante que a carteira não tenha rentabilidade negativa.",
+        "O distribuidor substitui o gestor sempre que um cotista solicita a compra de um ativo específico."
+      ],
+      "correct": 0,
+      "explanation": "A gestão da carteira compete ao gestor, conforme a política de investimento e a regulação. Administração fiduciária, custódia e distribuição são funções distintas. Nenhuma delas implica garantia automática de rentabilidade.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-098"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.2.2.10",
+      "topic": "Cotização e pagamento de resgate",
+      "pd_verified": true,
+      "context": "Uma classe informa, em seu documento de regras, cotização do resgate em D+30 e pagamento em D+2 após a cotização. Uma cliente precisa de dinheiro em dez dias e considera aplicar hoje. Qual alerta é essencial?",
+      "options": [
+        "O dinheiro não estará disponível no prazo de dez dias; cotização e pagamento são etapas diferentes que precisam ser somadas conforme o calendário das regras.",
+        "O pagamento ocorre em dois dias contados do pedido, porque o prazo de cotização não interfere no recebimento.",
+        "A cotização em D+30 só se aplica a aplicações, e nunca a pedidos de resgate.",
+        "O distribuidor pode assegurar pagamento em dez dias mesmo sem essa previsão nos documentos da classe."
+      ],
+      "correct": 0,
+      "explanation": "Cotização é a conversão das cotas no valor de resgate; pagamento é a entrega dos recursos. O prazo de pagamento após a cotização não substitui o prazo anterior. A necessidade em dez dias é incompatível com as condições descritas.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-099"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.2",
+      "topic": "Taxa de performance: cálculo simplificado",
+      "pd_verified": true,
+      "context": "Em um exemplo didático, R$ 10.000 tornam-se R$ 11.500 antes da performance. No mesmo intervalo, o benchmark acumula 10%. A regra hipotética cobra 20% apenas do ganho monetário que exceder o benchmark, sem outros ajustes ou taxas. Qual será a cobrança?",
+      "options": [
+        "R$ 100.",
+        "R$ 300.",
+        "R$ 500.",
+        "R$ 30."
+      ],
+      "correct": 0,
+      "explanation": "O benchmark levaria R$ 10.000 a R$ 11.000. O excedente é 11.500 − 11.000 = R$ 500; 20% disso são R$ 100. O cálculo é uma simplificação explicitada no enunciado: contratos reais podem exigir linha d'água, periodicidade e outros ajustes.",
+      "difficulty": "Difícil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-100"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.1.11",
+      "topic": "Comparação de rentabilidade líquida",
+      "pd_verified": true,
+      "context": "Para um exercício, duas aplicações de mesmo prazo, risco e liquidez pagam, respectivamente, 120% e 95% de um mesmo indicador. A primeira sofre imposto de 20% sobre todo o rendimento e a segunda é isenta. Use cálculo proporcional, sem outros custos. Qual oferece maior rendimento líquido?",
+      "options": [
+        "A primeira, equivalente a 96% do indicador depois do imposto.",
+        "A segunda, porque 120% menos 20 pontos percentuais resulta em 90% do indicador.",
+        "As duas, porque o imposto faz a primeira cair exatamente para 95% do indicador.",
+        "A primeira, mantendo os 120%, pois o imposto incide apenas sobre o valor originalmente aplicado."
+      ],
+      "correct": 0,
+      "explanation": "Com as premissas fornecidas, o rendimento líquido da primeira é 120% × (1 − 0,20) = 96% do indicador, acima de 95%. O imposto foi dado como hipótese de cálculo, não como alíquota universal ou tabela tributária vigente.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-101"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.2.3",
+      "topic": "Portabilidade de previdência",
+      "pd_verified": true,
+      "context": "Uma cliente possui PGBL e quer reduzir os custos migrando os recursos para outro PGBL elegível à portabilidade. Um atendente sugere resgatar tudo para a conta corrente e depois contratar o novo plano. Qual encaminhamento preserva a distinção entre as operações?",
+      "options": [
+        "Verificar a portabilidade direta e suas condições; resgatar e reaplicar não é o mesmo procedimento e pode antecipar tributação.",
+        "Resgatar para a conta corrente, pois todo resgate de previdência é tratado como portabilidade se houver reaplicação no mesmo dia.",
+        "Transferir diretamente para VGBL, pois a mudança de modalidade é requisito para qualquer portabilidade.",
+        "Escolher apenas pela rentabilidade passada, dispensando a análise de taxas e das características do plano de destino."
+      ],
+      "correct": 0,
+      "explanation": "A portabilidade elegível transfere recursos entre planos compatíveis sem convertê-los em resgate ao participante. Resgatar pode gerar incidência tributária e não equivale à transferência direta. Devem ser verificados carências, compatibilidade e condições dos planos.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-102"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.3.1",
+      "topic": "Custo do crédito e capacidade de pagamento",
+      "pd_verified": true,
+      "context": "Duas propostas liberam hoje R$ 10.000 e têm o mesmo calendário de 24 parcelas mensais. A primeira cobra 24 parcelas de R$ 500 e tarifa inicial de R$ 300 paga à parte. A segunda cobra 24 parcelas de R$ 505 sem tarifa inicial. Sem outros custos, qual análise é adequada?",
+      "options": [
+        "A segunda tem menor desembolso total, R$ 12.120 contra R$ 12.300; convém confirmar o CET e a capacidade de pagamento.",
+        "A primeira é necessariamente mais barata, porque sua parcela é R$ 5 menor, independentemente da tarifa.",
+        "As duas custam o mesmo, pois liberam igual valor inicial e têm igual prazo.",
+        "A segunda custa R$ 12.420, pois a tarifa da primeira deve ser somada às duas propostas."
+      ],
+      "correct": 0,
+      "explanation": "A primeira soma 24 × 500 + 300 = R$ 12.300; a segunda, 24 × 505 = R$ 12.120. Comparar somente a parcela ignora custos. O CET considera os fluxos e encargos; a soma nominal não substitui seu cálculo nem a avaliação da capacidade de pagamento.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-103"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.3.7",
+      "topic": "Crédito para capital de giro",
+      "pd_verified": true,
+      "context": "Uma loja paga fornecedores em 30 dias e recebe dos clientes em 60 dias. O negócio é operacionalmente viável, mas sofre falta temporária de caixa nesse intervalo. Qual análise é mais coerente antes de contratar crédito?",
+      "options": [
+        "Mapear o ciclo financeiro e a necessidade de capital de giro, comparando prazo e custo da linha com as entradas esperadas.",
+        "Escolher financiamento para um imóvel, pois qualquer necessidade temporária deve ser tratada como compra de ativo permanente.",
+        "Adotar crédito rotativo sem prazo de saída, usando o limite disponível como substituto de um fluxo de caixa.",
+        "Comparar apenas a taxa nominal, ignorando o momento das entradas e o custo efetivo da operação."
+      ],
+      "correct": 0,
+      "explanation": "O descasamento entre pagamento e recebimento gera necessidade de capital de giro. A solução requer avaliar montante, prazo, custos e viabilidade do caixa futuro. Uma linha inadequada ao ciclo pode transformar uma falta temporária em endividamento persistente.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-104"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.5.2.1",
+      "topic": "Franquia e cobertura de seguro",
+      "pd_verified": true,
+      "context": "Uma apólice hipotética de automóvel cobre determinado dano material de R$ 8.000 e estabelece franquia dedutível de R$ 2.000. Não há outros limites ou exclusões aplicáveis. Qual valor a seguradora pagará nesse exemplo?",
+      "options": [
+        "R$ 6.000.",
+        "R$ 8.000.",
+        "R$ 2.000.",
+        "R$ 10.000."
+      ],
+      "correct": 0,
+      "explanation": "Pelas condições explicitadas, a parcela a cargo do segurado é R$ 2.000. A indenização é 8.000 − 2.000 = R$ 6.000. A leitura das condições é essencial: o exemplo não afirma que todos os seguros tenham a mesma modalidade de franquia.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-105"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.5.1",
+      "topic": "Seguro de vida e objetivos de proteção",
+      "pd_verified": true,
+      "context": "Um casal com filhos pequenos quer proteger a renda familiar caso um dos responsáveis faleça durante os próximos dez anos. Já mantém reserva de emergência separada. Qual critério deve orientar primeiro a análise do seguro?",
+      "options": [
+        "Coberturas, capital segurado, prazo, exclusões e prêmio compatíveis com a necessidade de proteção dos dependentes.",
+        "A expectativa de resgatar o dobro dos prêmios ao fim do prazo, mesmo quando não há essa previsão contratual.",
+        "A contratação do maior prêmio disponível, usando seu valor como indicador suficiente de qualidade da proteção.",
+        "A substituição de toda a reserva de emergência pelo seguro, pois o seguro libera recursos a qualquer solicitação."
+      ],
+      "correct": 0,
+      "explanation": "O objetivo descrito é proteção contra um evento coberto. A análise começa pela necessidade financeira dos dependentes e pelas condições contratuais. Seguro não equivale automaticamente a reserva com liquidez ou a produto com resgate garantido.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-106"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.1.4",
+      "topic": "Patrimônio e liquidez",
+      "pd_verified": true,
+      "context": "Uma cliente possui imóvel de R$ 500.000, aplicação com liquidez de R$ 20.000 e dívida de R$ 120.000. Suas despesas essenciais são de R$ 5.000 mensais. Sem outras posições, qual diagnóstico é correto?",
+      "options": [
+        "O patrimônio líquido é R$ 400.000 e a aplicação líquida cobre quatro meses das despesas; o imóvel não equivale a caixa imediato.",
+        "O patrimônio líquido é R$ 520.000 e toda essa quantia está disponível para emergências.",
+        "O patrimônio líquido é R$ 640.000, pois a dívida deve ser somada aos ativos.",
+        "O patrimônio líquido é R$ 20.000, porque imóveis não integram o patrimônio pessoal."
+      ],
+      "correct": 0,
+      "explanation": "Ativos de R$ 520.000 menos obrigações de R$ 120.000 resultam em patrimônio líquido de R$ 400.000. A aplicação de R$ 20.000 cobre quatro meses de despesas de R$ 5.000. Patrimônio líquido e liquidez imediata são conceitos diferentes.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-107"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.1.3.2",
+      "topic": "Orçamento e formação de metas",
+      "pd_verified": true,
+      "context": "Um cliente recebe R$ 6.000 líquidos e gasta R$ 5.400 por mês. Sem dívidas, quer juntar R$ 12.000 em 12 meses; desconsidere rendimentos. Qual orientação explicita corretamente a distância até a meta?",
+      "options": [
+        "Ele precisa poupar R$ 1.000 mensais; o excedente atual de R$ 600 deixa uma diferença de R$ 400 que exige ajuste de renda, gastos ou prazo.",
+        "O excedente de R$ 600 basta, pois em 12 meses acumula R$ 12.000 sem precisar de rendimento.",
+        "Ele pode alcançar a meta sem mudança se aplicar todo o salário, desconsiderando as despesas essenciais.",
+        "O correto é escolher primeiro o produto mais rentável, sem verificar quanto será possível aportar."
+      ],
+      "correct": 0,
+      "explanation": "A meta exige 12.000 / 12 = R$ 1.000 ao mês. O orçamento libera apenas 6.000 − 5.400 = R$ 600. Faltam R$ 400 mensais; não se deve compensar a diferença presumindo rentabilidade elevada ou ignorando necessidades básicas.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-108"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.1.1",
+      "topic": "Ciclo de vida e objetivos",
+      "pd_verified": true,
+      "context": "Duas clientes têm 35 anos. Uma é responsável pela renda de três dependentes e usará dinheiro em seis meses; a outra possui renda estável, reserva formada e objetivo de vinte anos. Qual conclusão é adequada?",
+      "options": [
+        "A mesma idade não determina a mesma carteira; objetivos, horizonte, capacidade financeira e tolerância ao risco devem ser considerados individualmente.",
+        "Ambas devem ter a mesma alocação em renda variável, porque a idade é suficiente para definir risco.",
+        "A primeira deve assumir mais risco para compensar o prazo curto, independentemente dos dependentes.",
+        "A segunda pode dispensar avaliação de perfil, porque a existência de reserva define automaticamente um perfil arrojado."
+      ],
+      "correct": 0,
+      "explanation": "O ciclo de vida é um componente do planejamento, não uma regra única de alocação. Prazo, dependentes, liquidez, capacidade de suportar perdas e tolerância ao risco podem tornar necessidades muito diferentes, mesmo entre pessoas da mesma idade.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-109"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.2.6",
+      "topic": "Adequação após mudança financeira",
+      "pd_verified": true,
+      "context": "Um cliente antes estável perdeu parte da renda e passará a retirar recursos da carteira para despesas essenciais. Seu questionário ainda registra a situação antiga. Antes de recomendar novo produto com carência longa, qual é o encaminhamento mais adequado?",
+      "options": [
+        "Atualizar as informações relevantes e reavaliar a adequação à nova necessidade de liquidez e capacidade de suportar perdas.",
+        "Manter a classificação antiga até o vencimento administrativo do formulário, sem considerar a informação recebida.",
+        "Avaliar apenas a rentabilidade passada do produto, porque ela compensa a redução da renda.",
+        "Solicitar que o cliente aumente a tolerância a perdas no questionário para preservar as recomendações anteriores."
+      ],
+      "correct": 0,
+      "explanation": "A recomendação deve refletir a situação atual conhecida. Mudanças de renda e retiradas necessárias afetam capacidade de risco e liquidez. Alterar respostas para adequar o cadastro ao produto inverte o processo de suitability.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-110"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.2",
+      "topic": "Conflitos de interesse na recomendação",
+      "pd_verified": true,
+      "context": "Uma campanha interna aumenta a remuneração na venda de um produto. Duas alternativas podem atender à cliente, mas têm custos e riscos diferentes. O profissional divulga a comissão e acredita que isso basta para recomendar a mais remunerada. Como proceder?",
+      "options": [
+        "Além de informar o conflito, comparar adequação, riscos, custos e objetivos; a divulgação não substitui a recomendação no interesse da cliente.",
+        "Recomendar a de maior remuneração, pois a simples divulgação elimina qualquer problema de adequação.",
+        "Apresentar somente a alternativa da campanha para não confundir a cliente com informações sobre custos.",
+        "Usar a meta de vendas como critério principal e avaliar o perfil apenas depois da contratação."
+      ],
+      "correct": 0,
+      "explanation": "Transparência é necessária, mas não torna automaticamente adequada uma recomendação. O profissional deve gerir conflitos e fundamentar a escolha nos interesses e necessidades da cliente, comparando custos e riscos pertinentes.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-111"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.6",
+      "topic": "LGPD e bases legais",
+      "pd_verified": true,
+      "context": "Uma instituição precisa conservar determinados registros de identificação para cumprir obrigação legal. Um cliente revoga o consentimento de marketing e pede que tudo seja apagado imediatamente. Qual resposta separa corretamente as finalidades?",
+      "options": [
+        "Interromper o marketing baseado no consentimento revogado e avaliar a manutenção dos registros que tenham outra base legal e prazo de retenção aplicável.",
+        "Continuar todas as campanhas porque a existência de obrigação legal autoriza qualquer uso comercial dos dados.",
+        "Apagar inclusive registros legalmente obrigatórios, pois toda operação com dados depende exclusivamente de consentimento.",
+        "Transferir os dados a parceiros antes de apagar o cadastro para preservar a possibilidade de campanhas futuras."
+      ],
+      "correct": 0,
+      "explanation": "A LGPD prevê diferentes bases legais. A revogação do consentimento afeta os tratamentos que dele dependem, mas não elimina automaticamente obrigações legais de conservação. Cada finalidade exige base válida, necessidade e limitação de uso.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-112"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.5",
+      "topic": "Diligência diante de operação atípica",
+      "pd_verified": true,
+      "context": "Uma cliente com movimentação habitual modesta recebe transferências elevadas e solicita repasse imediato a contas de terceiros. Isso não prova crime. Qual atitude combina diligência e tratamento correto?",
+      "options": [
+        "Aplicar os procedimentos internos de atualização e análise, registrar os fatos e encaminhar aos responsáveis por PLD/FTP sem prejulgar a cliente.",
+        "Concluir publicamente que houve lavagem e explicar aos demais clientes por que o atendimento foi interrompido.",
+        "Dividir os repasses em valores menores para reduzir a chance de a operação ser identificada pelos controles.",
+        "Ignorar o desvio do padrão porque receber recursos por transferência eletrônica elimina risco de lavagem."
+      ],
+      "correct": 0,
+      "explanation": "Atipicidade é um sinal para análise, não uma conclusão de culpa. O profissional deve coletar e registrar informações pelos procedimentos autorizados e encaminhar a análise ao fluxo competente, mantendo sigilo e sem ajudar a contornar controles.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-113"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.3",
+      "topic": "Atendimento acessível e autonomia",
+      "pd_verified": true,
+      "context": "Uma cliente com deficiência visual comparece com acompanhante para conhecer produtos. O acompanhante responde antes dela e pede para escolher em seu lugar, sem procuração ou representação legal. Como conduzir o atendimento?",
+      "options": [
+        "Dirigir-se à cliente, oferecer informação acessível e verificar sua vontade e eventual representação antes de aceitar instruções de terceiros.",
+        "Transferir automaticamente a decisão ao acompanhante, presumindo incapacidade em razão da deficiência.",
+        "Pedir que a cliente assine sem leitura para evitar constrangimento ou demora no atendimento.",
+        "Recusar atendimento individual e permitir contratação apenas quando houver acompanhante, em qualquer situação."
+      ],
+      "correct": 0,
+      "explanation": "Deficiência não permite presumir incapacidade. A informação deve ser acessível e a vontade da cliente respeitada. A atuação de terceiros depende de poderes válidos, e não de mera presença no atendimento.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-114"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.2.2",
+      "topic": "Registro e continuidade do atendimento",
+      "pd_verified": true,
+      "context": "Um cliente relata que precisa usar uma aplicação para pagar uma cirurgia em 45 dias. O profissional identifica a necessidade, mas não registra o prazo no histórico e repassa o atendimento a um colega. Qual melhoria reduz o risco de orientação inconsistente?",
+      "options": [
+        "Registrar objetivo, prazo, restrições e encaminhamentos no canal autorizado, com acesso limitado a quem necessita continuar o atendimento.",
+        "Guardar os dados somente em um celular pessoal, evitando que fiquem nos sistemas da instituição.",
+        "Registrar apenas o saldo investido, porque informações sobre prazo não afetam a escolha de produtos.",
+        "Compartilhar o prontuário médico completo com toda a equipe comercial, independentemente de necessidade."
+      ],
+      "correct": 0,
+      "explanation": "O histórico pertinente dá continuidade ao relacionamento e sustenta a adequação. O registro deve limitar-se ao necessário, em canal autorizado e com acesso apropriado; não é justificativa para coletar ou divulgar dados sensíveis excessivos.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-115"
+    },
+    {
+      "theme": "Inovação e desenvolvimento de mercado",
+      "pd": "4.3",
+      "topic": "Critérios ASG e comunicação de sustentabilidade",
+      "pd_verified": true,
+      "context": "Dois fundos divulgam informações ASG. Um incorpora fatores ASG à análise de riscos; outro declara objetivo específico de investimento sustentável. Uma cliente entende que as duas descrições significam a mesma coisa. Qual explicação é mais adequada?",
+      "options": [
+        "Integrar fatores ASG não equivale, por si só, a assumir um objetivo sustentável específico; é preciso ler estratégia, critérios e divulgações de cada fundo.",
+        "Qualquer menção a ASG garante que a carteira contém somente empresas de impacto socioambiental positivo.",
+        "O fundo que integra ASG deixa de estar sujeito a riscos de crédito e de mercado.",
+        "A denominação do fundo dispensa a análise dos ativos e da política de investimento."
+      ],
+      "correct": 0,
+      "explanation": "Integração de fatores ASG e objetivo sustentável específico não são expressões intercambiáveis. A avaliação depende da estratégia efetiva e de sua transparência. Rótulos não garantem impacto, retorno ou ausência de risco.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-116"
+    },
+    {
+      "theme": "Inovação e desenvolvimento de mercado",
+      "pd": "4.4.5.2",
+      "topic": "Stablecoins: referência e riscos",
+      "pd_verified": true,
+      "context": "Um cliente considera uma stablecoin que busca acompanhar uma moeda fiduciária. Ele acredita que a referência de preço equivale a uma garantia de resgate em qualquer situação. Qual risco deve ser esclarecido?",
+      "options": [
+        "O vínculo pretendido pode falhar; reservas, emissor, liquidez e mecanismos de resgate precisam ser avaliados.",
+        "O uso de blockchain transfere automaticamente a obrigação de resgate ao banco central da moeda de referência.",
+        "A paridade pretendida torna desnecessária a avaliação da contraparte e da qualidade das reservas.",
+        "A possibilidade de negociação contínua garante liquidez suficiente para vender qualquer quantidade ao valor de referência."
+      ],
+      "correct": 0,
+      "explanation": "Stablecoin busca relativa estabilidade em relação a uma referência, mas isso não garante paridade permanente ou resgate irrestrito. Estrutura de reservas, riscos operacionais, contraparte e liquidez influenciam essa capacidade.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-117"
+    },
+    {
+      "theme": "Inovação e desenvolvimento de mercado",
+      "pd": "4.5.4",
+      "topic": "Open Insurance",
+      "pd_verified": true,
+      "context": "Uma cliente autoriza, pelos canais do ecossistema, o compartilhamento de dados de seguros para receber propostas mais adequadas. Um vendedor promete aprovação automática e redução garantida do prêmio. Qual esclarecimento é correto?",
+      "options": [
+        "O compartilhamento autorizado pode facilitar a comparação e personalização, mas não garante aceitação do risco ou preço menor.",
+        "A autorização dispensa a seguradora de avaliar o risco e obriga a oferta de cobertura integral.",
+        "O compartilhamento altera automaticamente a apólice vigente, mesmo sem contratação de nova proposta.",
+        "A autorização permite usar os dados para qualquer finalidade futura, sem limites de escopo ou validade."
+      ],
+      "correct": 0,
+      "explanation": "Open Insurance facilita compartilhamento padronizado e autorizado, dentro das regras do ecossistema. Não elimina a análise de risco nem garante condição comercial. Compartilhar dados não equivale a contratar ou alterar uma apólice.",
+      "difficulty": "Fácil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-118"
+    },
+    {
+      "theme": "Inovação e desenvolvimento de mercado",
+      "pd": "4.6.1",
+      "topic": "IA generativa e revisão humana",
+      "pd_verified": true,
+      "context": "Uma instituição usa IA generativa para preparar respostas sobre investimentos. Em um teste, o sistema cita uma regra inexistente com linguagem convincente. Qual medida trata esse risco sem supor que a fluência do texto comprova sua precisão?",
+      "options": [
+        "Exigir conferência em fontes confiáveis, limites de uso e revisão adequada antes de aplicar a orientação ao atendimento.",
+        "Aumentar o tamanho da resposta, pois textos mais longos deixam de conter informações inventadas.",
+        "Publicar sem revisão se a resposta tiver vocabulário técnico e não apresentar erro de gramática.",
+        "Treinar apenas com campanhas comerciais e dispensar atualização das referências regulatórias."
+      ],
+      "correct": 0,
+      "explanation": "IA generativa pode produzir conteúdo plausível e incorreto. Controles devem incluir verificação, governança, proteção de dados e revisão proporcional ao risco. Linguagem fluente não demonstra exatidão jurídica ou financeira.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-119"
+    },
+    {
+      "theme": "Inovação e desenvolvimento de mercado",
+      "pd": "4.7.6.4",
+      "topic": "Adquirentes e subadquirentes",
+      "pd_verified": true,
+      "context": "Uma pequena loja usa uma plataforma para aceitar cartões, sem contratar diretamente cada adquirente. A dona quer entender por que aparecem diferentes participantes no fluxo do pagamento. Qual explicação é mais apropriada?",
+      "options": [
+        "Uma subadquirente pode intermediar o relacionamento comercial e operacional com adquirentes; funções, liquidação, prazos e custos precisam ser identificados no contrato.",
+        "A presença de uma subadquirente faz o pagamento deixar de depender de qualquer arranjo, emissor ou adquirente.",
+        "A adquirente é o consumidor que apresenta o cartão e escolhe o número de parcelas.",
+        "A subadquirente se torna automaticamente o banco central responsável por garantir todas as vendas da loja."
+      ],
+      "correct": 0,
+      "explanation": "O ecossistema de cartões pode reunir emissor, bandeira, adquirente e facilitadores, como subadquirentes. O contrato deve esclarecer atribuições, custos, prazos e riscos; o uso de um intermediário não elimina os demais participantes.",
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "ME-120"
     }
   ],
   "trees": [
@@ -1244,7 +2294,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-001",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -1314,7 +2367,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-002",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -1384,7 +2440,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-003",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -1454,7 +2513,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-004",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1524,7 +2586,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-005",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1594,7 +2659,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-006",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1664,7 +2732,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-007",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1734,7 +2805,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-008",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1804,7 +2878,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-009",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -1874,7 +2951,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-010",
+      "origin": "Autoral · Banco A",
+      "difficulty": "Médio"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -1907,9 +2987,9 @@
           "prompt": "Considerando esse objetivo, qual orientação é mais adequada?",
           "options": [
             {
-              "text": "Priorizar a alocação em FIIs de papel, já que seus rendimentos dependem de indexadores e juros contratuais, tendendo a ser mais previsíveis do que a receita de aluguéis sujeita a vacância e inadimplência de locatários.",
+              "text": "Explicar que FIIs de papel reduzem a exposição direta à vacância, mas exigem análise de crédito, indexadores, concentração e liquidez; não há garantia de renda mensal estável.",
               "isBest": true,
-              "feedback": "Correto. Por serem lastreados em recebíveis com fluxos contratuais (geralmente indexados a CDI, IPCA ou IGP-M), os FIIs de papel tendem a oferecer distribuições mais estáveis e previsíveis, enquanto os FIIs de tijolo estão mais expostos a vacância, inadimplência de locatários e ciclos do mercado imobiliário físico."
+              "feedback": "Correto. Menor exposição direta à vacância não significa risco menor em todas as dimensões nem renda previsível garantida. A capacidade dos devedores, indexadores e características da carteira precisam ser avaliados diante do objetivo de Beatriz."
             },
             {
               "text": "Priorizar a alocação em FIIs de tijolo, pois imóveis físicos nunca ficam vagos e sempre geram renda constante.",
@@ -1928,9 +3008,9 @@
           "prompt": "Qual é a orientação tecnicamente correta sobre a tributação dos rendimentos distribuídos por FIIs listados em bolsa?",
           "options": [
             {
-              "text": "Os rendimentos distribuídos mensalmente por FIIs com cotas negociadas em bolsa são isentos de IR para pessoa física, desde que atendidos requisitos regulatórios (como pulverização mínima de cotistas e negociação em mercado organizado); já o ganho de capital na venda das cotas é tributado.",
+              "text": "Os rendimentos distribuídos por FIIs podem ser isentos para pessoa física quando cumpridos os requisitos legais de negociação, dispersão e participação; a isenção não abrange automaticamente o ganho na venda das cotas.",
               "isBest": true,
-              "feedback": "Correto. A distribuição de rendimentos de FIIs a pessoas físicas é isenta de IR quando cumpridos os requisitos legais (cotas negociadas exclusivamente em bolsa ou mercado de balcão organizado, fundo com no mínimo 50 cotistas, entre outros). O ganho de capital obtido na alienação das cotas, no entanto, é tributado à alíquota de 20%."
+              "feedback": "Correto. É necessário conferir os requisitos de isenção aplicáveis ao fundo e ao beneficiário. Não se deve confundir o rendimento distribuído com ganho obtido ao vender cotas; são eventos com tratamento próprio."
             },
             {
               "text": "Toda e qualquer distribuição de rendimento de FII é isenta de IR, independentemente de qualquer condição regulatória.",
@@ -1944,7 +3024,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-011",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -2014,7 +3097,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-012",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -2084,7 +3170,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-013",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Produtos do mercado financeiro",
@@ -2154,7 +3243,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-014",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -2224,7 +3316,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-015",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -2294,7 +3389,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-016",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -2364,7 +3462,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-017",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -2434,7 +3535,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-018",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -2504,7 +3608,10 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-019",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
     },
     {
       "theme": "Relacionamento com o cliente",
@@ -2574,7 +3681,810 @@
             }
           ]
         }
-      ]
+      ],
+      "bank_id": "AD-020",
+      "origin": "Autoral · Banco B",
+      "difficulty": "Médio"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.2.2.10",
+      "topic": "Resgate e compatibilidade com prazo",
+      "pd_verified": true,
+      "title": "Pagamento de imóvel e calendário de resgate",
+      "intro": "Bianca possui uma aplicação líquida e precisa pagar a entrada de um imóvel em 45 dias. Está considerando transferir o valor a uma classe de fundo que promete retorno potencial maior.",
+      "steps": [
+        {
+          "situation": "As regras da classe indicam cotização de resgate em D+60 e pagamento dois dias depois. Bianca ainda não aplicou.",
+          "prompt": "Qual deve ser o primeiro esclarecimento?",
+          "options": [
+            {
+              "text": "O prazo de saída não atende ao pagamento em 45 dias; é preciso preservar acesso ao valor necessário.",
+              "isBest": true,
+              "feedback": "A necessidade tem data definida e anterior ao prazo de conversão. Potencial de retorno não resolve incompatibilidade de liquidez."
+            },
+            {
+              "text": "O prazo de dois dias de pagamento é suficiente, pois substitui os 60 dias de cotização.",
+              "isBest": false,
+              "feedback": "Pagamento e cotização são etapas diferentes. Não se pode ignorar o período anterior à disponibilização dos recursos."
+            },
+            {
+              "text": "O retorno potencial compensa esperar, então o prazo contratual não precisa ser considerado.",
+              "isBest": false,
+              "feedback": "O compromisso tem data e valor. Eventual retorno maior não altera o vencimento da obrigação."
+            }
+          ]
+        },
+        {
+          "situation": "Bianca pergunta se pode aplicar apenas uma parte. A entrada exigirá R$ 80.000; ela tem exatamente R$ 80.000 disponíveis e não conta com outra fonte confirmada.",
+          "prompt": "Como avaliar essa possibilidade?",
+          "options": [
+            {
+              "text": "Não comprometer o valor já integralmente necessário com uma aplicação que não permite saída no prazo.",
+              "isBest": true,
+              "feedback": "Não existe excedente confirmado. Mesmo uma alocação parcial retiraria liquidez do montante necessário à obrigação."
+            },
+            {
+              "text": "Aplicar metade, pois diversificar produtos elimina o problema de datas de resgate.",
+              "isBest": false,
+              "feedback": "Diversificação não transforma resgate longo em liquidez imediata; ainda faltaria parte do pagamento."
+            },
+            {
+              "text": "Aplicar tudo e solicitar crédito no futuro sem comparar seu custo.",
+              "isBest": false,
+              "feedback": "Crédito futuro não está assegurado e pode acrescentar custos e riscos que não foram avaliados."
+            }
+          ]
+        },
+        {
+          "situation": "Bianca decide preservar a liquidez da entrada. Quer considerar a classe de prazo longo para uma futura sobra.",
+          "prompt": "Qual fechamento é adequado?",
+          "options": [
+            {
+              "text": "Registrar a necessidade e, quando houver excedente, reavaliar perfil, prazo, riscos, custos e regras de resgate.",
+              "isBest": true,
+              "feedback": "A decisão deve se apoiar no conjunto de condições e ser revista para o objetivo e a situação financeira futura."
+            },
+            {
+              "text": "Registrar apenas o retorno passado, pois já foi identificado que o produto pode ser usado no futuro.",
+              "isBest": false,
+              "feedback": "Retorno passado não substitui a avaliação de adequação e dos prazos na data de uma possível aplicação."
+            },
+            {
+              "text": "Prometer retorno mínimo para que ela aceite retomar a conversa quando sobrar dinheiro.",
+              "isBest": false,
+              "feedback": "Potencial de retorno não autoriza garantia inexistente. O fechamento deve ser transparente."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-021"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.1.1.2.2.2.8",
+      "topic": "Subscrição e decisão do acionista",
+      "pd_verified": true,
+      "title": "Participação acionária após aumento de capital",
+      "intro": "Daniel possui 200 das 2.000 ações de uma companhia. Ela anuncia emissão de mais 1.000 ações da mesma espécie, com direito de subscrição proporcional. Todos os números são hipotéticos.",
+      "steps": [
+        {
+          "situation": "Daniel quer manter sua participação percentual e pergunta quantas novas ações precisaria adquirir.",
+          "prompt": "Qual cálculo está correto?",
+          "options": [
+            {
+              "text": "Subscrever 100 novas ações para continuar com 10% das 3.000 ações após a emissão.",
+              "isBest": true,
+              "feedback": "A participação inicial é 200 / 2.000 = 10%. Ele precisaria de 10% das 1.000 novas ações, passando a 300 de 3.000."
+            },
+            {
+              "text": "Subscrever 200 ações, pois é necessário repetir toda a quantidade já detida.",
+              "isBest": false,
+              "feedback": "O direito proporcional é calculado sobre a nova emissão. Adquirir 200 elevaria a participação, não apenas a manteria."
+            },
+            {
+              "text": "Não subscrever, porque a participação percentual permanece constante em qualquer aumento de capital.",
+              "isBest": false,
+              "feedback": "Sem adquirir novas ações, ele manteria 200, mas o total aumentaria para 3.000, reduzindo sua participação percentual."
+            }
+          ]
+        },
+        {
+          "situation": "Daniel não quer ampliar a concentração na empresa e precisa verificar alternativas para seus direitos.",
+          "prompt": "Qual orientação respeita sua autonomia?",
+          "options": [
+            {
+              "text": "Ler o aviso e os prazos, verificar possibilidade de negociação dos direitos e avaliar a decisão frente à carteira.",
+              "isBest": true,
+              "feedback": "Exercer não é a única análise pertinente. A negociação depende das características do direito e dos prazos da operação."
+            },
+            {
+              "text": "Exercer obrigatoriamente todos os direitos, independentemente de concentração ou necessidade de caixa.",
+              "isBest": false,
+              "feedback": "Manter percentual não deve ser imposto se conflitar com objetivos, concentração ou disponibilidade financeira."
+            },
+            {
+              "text": "Ignorar as datas, pois os direitos podem ser exercidos a qualquer momento depois da emissão.",
+              "isBest": false,
+              "feedback": "Os direitos têm condições e prazos. Ignorá-los pode causar sua perda sem que o objetivo seja alcançado."
+            }
+          ]
+        },
+        {
+          "situation": "Ele pergunta se o preço de subscrição inferior à cotação atual garante lucro.",
+          "prompt": "Qual resposta é adequada?",
+          "options": [
+            {
+              "text": "Não; o valor da ação pode mudar e a análise deve incluir condições da emissão, fundamentos, custos e riscos.",
+              "isBest": true,
+              "feedback": "Uma diferença de preço observada hoje não garante resultado futuro nem torna a decisão livre de risco."
+            },
+            {
+              "text": "Sim, a companhia deve recomprar as novas ações pela cotação atual se houver queda.",
+              "isBest": false,
+              "feedback": "O direito de subscrição não implica essa obrigação de recompra pela companhia."
+            },
+            {
+              "text": "Sim, manter a participação percentual impede qualquer perda financeira na posição.",
+              "isBest": false,
+              "feedback": "Percentual de participação e valorização econômica são coisas distintas. A carteira pode perder valor."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Difícil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-022"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.3.7",
+      "topic": "Crédito e ciclo financeiro",
+      "pd_verified": true,
+      "title": "Capital de giro para encomenda sazonal",
+      "intro": "Renata administra uma pequena fábrica. Uma encomenda exigirá pagamentos agora e deverá gerar recebimento em quatro meses. Ela pede ajuda para comparar linhas de crédito.",
+      "steps": [
+        {
+          "situation": "O atendente ainda não conhece os valores e o calendário da encomenda.",
+          "prompt": "Qual levantamento deve vir antes da escolha da linha?",
+          "options": [
+            {
+              "text": "Estimar entradas e saídas, necessidade efetiva de caixa e capacidade de pagar nas datas contratadas.",
+              "isBest": true,
+              "feedback": "A avaliação do ciclo financeiro indica montante e prazo necessários e se a operação é suportável."
+            },
+            {
+              "text": "Escolher o maior limite aprovado, porque crédito disponível deve ser integralmente utilizado.",
+              "isBest": false,
+              "feedback": "O limite é uma autorização máxima, não uma medida automática da necessidade ou da capacidade de pagamento."
+            },
+            {
+              "text": "Escolher a linha com menor prestação, sem comparar prazo total ou encargos.",
+              "isBest": false,
+              "feedback": "Parcela menor pode decorrer de prazo maior e custo total superior. Também é necessário compatibilizar os fluxos."
+            }
+          ]
+        },
+        {
+          "situation": "Duas linhas atendem ao calendário. Uma tem juros anunciados menores, mas inclui tarifa e seguro facultativo na proposta.",
+          "prompt": "Como comparar corretamente?",
+          "options": [
+            {
+              "text": "Solicitar a discriminação dos encargos e o CET, esclarecendo a opção do seguro e comparando os fluxos completos.",
+              "isBest": true,
+              "feedback": "A taxa anunciada pode não representar o custo efetivo. Serviços facultativos devem ser esclarecidos e a análise deve considerar as condições efetivas."
+            },
+            {
+              "text": "Comparar só a taxa de juros, porque tarifas e seguro não representam saída de caixa.",
+              "isBest": false,
+              "feedback": "Custos adicionais podem alterar a comparação e devem entrar na avaliação da proposta efetivamente contratada."
+            },
+            {
+              "text": "Aceitar o seguro sem explicação para preservar o acesso a qualquer informação sobre o crédito.",
+              "isBest": false,
+              "feedback": "O cliente deve compreender as condições e opções. Informação sobre custo não deve depender da aceitação de produto facultativo."
+            }
+          ]
+        },
+        {
+          "situation": "A projeção supõe recebimento integral no quarto mês. Renata admite que o comprador já atrasou pagamentos em outras operações.",
+          "prompt": "Qual análise complementa a decisão?",
+          "options": [
+            {
+              "text": "Simular atraso e necessidade de caixa adicional, verificando margem de segurança e alternativas antes de contratar.",
+              "isBest": true,
+              "feedback": "Um cenário de atraso testa a capacidade de pagar mesmo quando o fluxo esperado não se realiza no prazo."
+            },
+            {
+              "text": "Considerar o atraso irrelevante porque a previsão média coincide com o vencimento.",
+              "isBest": false,
+              "feedback": "Coincidência entre previsão e vencimento não elimina risco de liquidez se não houver margem para atraso."
+            },
+            {
+              "text": "Aumentar o limite e aplicar o excedente em produto sem liquidez até depois do vencimento.",
+              "isBest": false,
+              "feedback": "Essa decisão acrescenta custo e descasamento, em vez de tratar a vulnerabilidade do fluxo de caixa."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-023"
+    },
+    {
+      "theme": "Produtos do mercado financeiro",
+      "pd": "2.5.2.2",
+      "topic": "Coberturas e exclusões de seguro",
+      "pd_verified": true,
+      "title": "Seguro residencial e expectativa de cobertura",
+      "intro": "João quer proteger sua residência e ter ajuda para uma hospedagem temporária se um evento coberto impedir o uso do imóvel. Ele recebeu uma proposta e ainda não a contratou.",
+      "steps": [
+        {
+          "situation": "João diz que 'seguro residencial cobre qualquer imprevisto'.",
+          "prompt": "Como iniciar a orientação?",
+          "options": [
+            {
+              "text": "Identificar os riscos que ele deseja cobrir e comparar com coberturas, limites, franquias e exclusões da proposta.",
+              "isBest": true,
+              "feedback": "O nome comercial não garante cobertura universal. É necessário relacionar a necessidade com as condições contratuais."
+            },
+            {
+              "text": "Confirmar a cobertura universal, desde que o prêmio esteja em dia.",
+              "isBest": false,
+              "feedback": "Pagar o prêmio não inclui riscos excluídos nem amplia automaticamente os limites contratados."
+            },
+            {
+              "text": "Avaliar somente o valor total do prêmio, pois as condições são padronizadas para toda residência.",
+              "isBest": false,
+              "feedback": "Preço isolado não permite saber se as necessidades foram atendidas; coberturas e limites podem variar."
+            }
+          ]
+        },
+        {
+          "situation": "A proposta cobre danos materiais em determinados eventos, mas não inclui cobertura específica para despesas de hospedagem temporária.",
+          "prompt": "Qual esclarecimento evita uma expectativa indevida?",
+          "options": [
+            {
+              "text": "Dano material e hospedagem temporária são necessidades diferentes; verificar cobertura adicional ou alternativa adequada.",
+              "isBest": true,
+              "feedback": "A proteção do bem não significa automaticamente cobertura de toda despesa de acomodação durante uma impossibilidade de uso."
+            },
+            {
+              "text": "A cobertura de danos materiais implica pagamento de qualquer hospedagem escolhida, sem limite.",
+              "isBest": false,
+              "feedback": "A indenização depende das condições. Não se deve presumir cobertura de hospedagem ausente da proposta."
+            },
+            {
+              "text": "A ausência pode ser ignorada e negociada somente depois do sinistro.",
+              "isBest": false,
+              "feedback": "O sinistro não cria cobertura não contratada. A análise deve ocorrer antes da contratação."
+            }
+          ]
+        },
+        {
+          "situation": "João quer contratar, mas planeja ampliar a residência e adquirir novos bens.",
+          "prompt": "Qual providência é coerente para a continuidade?",
+          "options": [
+            {
+              "text": "Registrar as condições entendidas e orientar revisão dos valores e riscos quando a residência ou os bens mudarem.",
+              "isBest": true,
+              "feedback": "A proteção deve acompanhar a exposição real. Alterações relevantes exigem reavaliação das informações e das condições."
+            },
+            {
+              "text": "Garantir indenização sem limites, independentemente dos valores declarados e da apólice.",
+              "isBest": false,
+              "feedback": "O profissional não pode prometer cobertura ilimitada que o contrato não prevê."
+            },
+            {
+              "text": "Recomendar omitir a ampliação do imóvel para evitar possível ajuste do prêmio.",
+              "isBest": false,
+              "feedback": "Omissão de informações relevantes pode prejudicar a adequação da cobertura e a análise do risco."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-024"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.3",
+      "topic": "Acessibilidade e compreensão",
+      "pd_verified": true,
+      "title": "Atendimento inclusivo com preservação de autonomia",
+      "intro": "Márcia tem deficiência auditiva e procura a instituição para compreender alternativas de aplicação. Ela prefere comunicação escrita e possui capacidade para decidir por conta própria.",
+      "steps": [
+        {
+          "situation": "O atendimento habitualmente é feito por telefone e por explicações verbais rápidas.",
+          "prompt": "Como adaptar o início da conversa?",
+          "options": [
+            {
+              "text": "Perguntar pelo canal acessível de sua preferência e oferecer informações escritas claras, preservando sua participação.",
+              "isBest": true,
+              "feedback": "A adaptação deve atender à necessidade informada pela cliente e permitir que ela compreenda e decida."
+            },
+            {
+              "text": "Solicitar que um familiar receba todas as orientações e decida, mesmo sem autorização.",
+              "isBest": false,
+              "feedback": "A deficiência não autoriza transferir automaticamente a decisão ou o acesso aos dados a terceiros."
+            },
+            {
+              "text": "Reduzir a quantidade de informação sobre riscos para tornar a conversa mais curta.",
+              "isBest": false,
+              "feedback": "Acessibilidade exige apresentar a informação adequadamente, não omitir riscos importantes."
+            }
+          ]
+        },
+        {
+          "situation": "Márcia relata não compreender a diferença entre prazo de resgate e vencimento do título.",
+          "prompt": "Qual é a melhor forma de verificar entendimento?",
+          "options": [
+            {
+              "text": "Usar exemplos de datas e pedir que ela explique, com suas palavras, quando conseguiria acessar o dinheiro.",
+              "isBest": true,
+              "feedback": "A confirmação de compreensão ajuda a corrigir equívocos concretos sem presumir que a assinatura significa entendimento."
+            },
+            {
+              "text": "Obter assinatura de ciência e encerrar o esclarecimento, porque o formulário substitui a explicação.",
+              "isBest": false,
+              "feedback": "O registro formal não substitui informação compreensível e verificação de entendimento."
+            },
+            {
+              "text": "Repetir o mesmo texto técnico em letras maiores, sem alterar o exemplo ou ouvir a dúvida.",
+              "isBest": false,
+              "feedback": "A questão envolve compreensão de conceitos. Repetir a mesma linguagem pode manter a dificuldade."
+            }
+          ]
+        },
+        {
+          "situation": "Ela escolhe uma alternativa adequada e pede uma cópia das condições no canal escrito utilizado.",
+          "prompt": "Como concluir?",
+          "options": [
+            {
+              "text": "Fornecer as condições pelo canal autorizado e acessível e registrar a decisão e os esclarecimentos pertinentes.",
+              "isBest": true,
+              "feedback": "A cliente deve ter acesso às condições. O registro preserva a continuidade e a transparência do atendimento."
+            },
+            {
+              "text": "Enviar somente ao familiar para evitar que a cliente tenha trabalho ao ler.",
+              "isBest": false,
+              "feedback": "Isso retira autonomia e pode divulgar dados a terceiro sem fundamento."
+            },
+            {
+              "text": "Fornecer apenas o nome do produto, deixando prazos e custos para consulta futura se houver problema.",
+              "isBest": false,
+              "feedback": "As condições precisam estar disponíveis antes e no fechamento, e não apenas depois de um problema."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-025"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.1.3",
+      "topic": "Orçamento com renda variável",
+      "pd_verified": true,
+      "title": "Planejamento de caixa de uma profissional autônoma",
+      "intro": "Camila é autônoma. A renda mensal oscila entre R$ 3.000 e R$ 8.000, enquanto as despesas essenciais são de R$ 3.500. Ela quer assumir um aporte fixo elevado.",
+      "steps": [
+        {
+          "situation": "Camila usa o melhor mês como referência para decidir o valor do aporte.",
+          "prompt": "Qual diagnóstico deve vir primeiro?",
+          "options": [
+            {
+              "text": "Analisar o histórico e a sazonalidade das entradas, as despesas e a reserva para meses de menor renda.",
+              "isBest": true,
+              "feedback": "A capacidade sustentável de poupar depende da variação do caixa, e não apenas de um pico de faturamento."
+            },
+            {
+              "text": "Fixar um aporte com base nos R$ 8.000, porque o maior valor já ocorreu e pode ser repetido.",
+              "isBest": false,
+              "feedback": "Um mês excepcional não garante capacidade recorrente de aporte ou de pagamento das despesas."
+            },
+            {
+              "text": "Fixar o aporte no valor total dos R$ 3.500 de despesas, para compensar a instabilidade.",
+              "isBest": false,
+              "feedback": "A necessidade de gasto não se transforma em capacidade de poupança. O orçamento precisa ser equilibrado."
+            }
+          ]
+        },
+        {
+          "situation": "Em um mês de renda de R$ 3.000, sem outras entradas, Camila manterá as despesas essenciais de R$ 3.500.",
+          "prompt": "O que esse cenário exige considerar?",
+          "options": [
+            {
+              "text": "Um déficit de R$ 500 antes de qualquer aporte; planejar o uso de reserva e ajustes, evitando financiar aportes com dívida cara.",
+              "isBest": true,
+              "feedback": "Receita menos despesa resulta em −R$ 500. Poupar de forma nominal enquanto se cria dívida cara pode agravar a situação."
+            },
+            {
+              "text": "Um excedente de R$ 500, pois a diferença entre renda e despesa sempre representa poupança.",
+              "isBest": false,
+              "feedback": "A ordem da conta importa: as despesas superam a renda, portanto existe déficit, não excedente."
+            },
+            {
+              "text": "Um aporte mínimo de R$ 3.000, pois os gastos essenciais não devem entrar no plano de investimentos.",
+              "isBest": false,
+              "feedback": "Investimentos e gastos precisam ser vistos em conjunto. O valor necessário à subsistência não pode ser ignorado."
+            }
+          ]
+        },
+        {
+          "situation": "Camila aceita criar uma regra de aportes que respeite a renda variável.",
+          "prompt": "Qual plano é mais coerente?",
+          "options": [
+            {
+              "text": "Estabelecer uma meta flexível de poupança sobre excedentes, reforçar a reserva e revisar o plano com a evolução do caixa.",
+              "isBest": true,
+              "feedback": "A flexibilidade permite poupar nos meses favoráveis sem presumir uma renda fixa inexistente."
+            },
+            {
+              "text": "Contratar aporte automático irreversível e recorrer ao cheque especial nos meses fracos.",
+              "isBest": false,
+              "feedback": "O plano deve reduzir vulnerabilidade. Obrigar aporte financiado por crédito caro cria um risco adicional."
+            },
+            {
+              "text": "Eliminar toda meta e usar a renda dos melhores meses sem qualquer registro.",
+              "isBest": false,
+              "feedback": "A renda variável exige planejamento adaptado, não ausência de controle e de objetivos."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-026"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.2.1",
+      "topic": "Planejamento de objetivos concorrentes",
+      "pd_verified": true,
+      "title": "Dois objetivos, dois horizontes de tempo",
+      "intro": "Rafael e Lúcia querem reservar recursos para a matrícula universitária da filha em 18 meses e para aposentadoria em 22 anos. Ambos dizem aceitar oscilações moderadas.",
+      "steps": [
+        {
+          "situation": "O casal pede uma única aplicação para todo o dinheiro.",
+          "prompt": "Como organizar a análise?",
+          "options": [
+            {
+              "text": "Separar os valores, prazos, prioridades e necessidades de liquidez de cada objetivo antes de escolher produtos.",
+              "isBest": true,
+              "feedback": "A tolerância geral a risco não torna os horizontes iguais. A análise por objetivo evita comprometer obrigações próximas."
+            },
+            {
+              "text": "Adotar o prazo de 22 anos para todos os recursos porque é o objetivo de maior duração.",
+              "isBest": false,
+              "feedback": "A matrícula tem data próxima. Usar só o prazo mais longo ignora uma obrigação independente."
+            },
+            {
+              "text": "Adotar a maior rentabilidade histórica como critério único para as duas metas.",
+              "isBest": false,
+              "feedback": "Desempenho passado não resolve diferenças de prazo, liquidez e capacidade de suportar perdas."
+            }
+          ]
+        },
+        {
+          "situation": "A matrícula exige R$ 30.000 e já está integralmente provisionada. A parcela tem pouca margem para perdas antes do pagamento.",
+          "prompt": "Qual orientação é coerente para essa parcela?",
+          "options": [
+            {
+              "text": "Priorizar preservação e disponibilidade no prazo, sem confundir a tolerância geral do casal com a capacidade de perda dessa meta.",
+              "isBest": true,
+              "feedback": "A capacidade de suportar perdas deve ser avaliada à luz do compromisso específico e da possibilidade de recompor recursos."
+            },
+            {
+              "text": "Buscar risco elevado para reduzir o custo da universidade com ganhos esperados, mesmo sem margem para perda.",
+              "isBest": false,
+              "feedback": "A expectativa de ganho não elimina o risco de faltar dinheiro para uma obrigação já definida."
+            },
+            {
+              "text": "Bloquear o valor por 22 anos, pois a aposentadoria deve substituir a matrícula como referência.",
+              "isBest": false,
+              "feedback": "Isso comprometeria a disponibilidade do dinheiro no prazo da matrícula."
+            }
+          ]
+        },
+        {
+          "situation": "O casal quer avançar também no plano de aposentadoria.",
+          "prompt": "Qual deve ser o encaminhamento?",
+          "options": [
+            {
+              "text": "Avaliar aportes sustentáveis, carteira compatível e revisões periódicas sem presumir retorno garantido pelo horizonte longo.",
+              "isBest": true,
+              "feedback": "Prazo longo permite planejar de forma distinta, mas não elimina risco nem dispensa acompanhamento e adequação."
+            },
+            {
+              "text": "Tratar 22 anos como garantia de recuperação de qualquer perda e concentrar todo o aporte em um ativo.",
+              "isBest": false,
+              "feedback": "Horizonte longo não garante retorno ou recuperação e não substitui gestão de concentração."
+            },
+            {
+              "text": "Suspender o acompanhamento até o ano da aposentadoria para evitar ajustes no plano.",
+              "isBest": false,
+              "feedback": "Mudanças de renda, família, metas e mercado podem exigir revisões ao longo do período."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-027"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.5",
+      "topic": "Cadastro e movimentação por terceiros",
+      "pd_verified": true,
+      "title": "Recursos de terceiros em conta pessoal",
+      "intro": "Patrícia, cliente da instituição, recebe um crédito relevante incompatível com o padrão anterior. Um conhecido a acompanha e procura dar todas as instruções de movimentação.",
+      "steps": [
+        {
+          "situation": "Ainda não há informação suficiente sobre origem dos recursos, finalidade ou eventual representação.",
+          "prompt": "Qual é o primeiro encaminhamento adequado?",
+          "options": [
+            {
+              "text": "Confirmar a vontade da cliente, verificar poderes de terceiros e solicitar informações pelos procedimentos de diligência.",
+              "isBest": true,
+              "feedback": "A análise precisa identificar quem instrui a operação e a legitimidade da atuação de terceiros, sem prejulgar a cliente."
+            },
+            {
+              "text": "Aceitar as ordens do acompanhante, pois a presença física equivale a procuração.",
+              "isBest": false,
+              "feedback": "Estar presente não confere representação. A vontade da titular e os poderes devem ser verificados."
+            },
+            {
+              "text": "Ensinar a dividir a transferência para que não seja analisada internamente.",
+              "isBest": false,
+              "feedback": "Não se deve ajudar a contornar controles de monitoramento e diligência."
+            }
+          ]
+        },
+        {
+          "situation": "As explicações permanecem inconsistentes e o terceiro pressiona pelo envio imediato.",
+          "prompt": "Como tratar a situação?",
+          "options": [
+            {
+              "text": "Registrar os fatos e acionar o fluxo interno de PLD/FTP e de segurança, observando os procedimentos aplicáveis à operação.",
+              "isBest": true,
+              "feedback": "A pressão e inconsistência exigem análise formal. A decisão operacional deve seguir regras e responsáveis competentes."
+            },
+            {
+              "text": "Acusar a cliente de crime para que a responsabilidade pela decisão fique com ela.",
+              "isBest": false,
+              "feedback": "Atipicidade não prova crime e não autoriza acusação. O atendimento deve manter diligência e sigilo."
+            },
+            {
+              "text": "Executar primeiro e omitir o comportamento do terceiro no registro.",
+              "isBest": false,
+              "feedback": "O registro incompleto prejudica a análise; a urgência comercial não afasta os procedimentos de controle."
+            }
+          ]
+        },
+        {
+          "situation": "Patrícia pergunta se será feita alguma comunicação às autoridades.",
+          "prompt": "Qual conduta respeita o tratamento sigiloso?",
+          "options": [
+            {
+              "text": "Informar apenas o que pode ser esclarecido sobre procedimentos, sem revelar eventual comunicação sigilosa nem antecipar conclusões.",
+              "isBest": true,
+              "feedback": "A análise e eventual comunicação seguem fluxo restrito. O profissional não deve divulgar comunicações sigilosas ou orientar como evitá-las."
+            },
+            {
+              "text": "Prometer avisá-la antes de qualquer comunicação para que consiga cancelar a operação.",
+              "isBest": false,
+              "feedback": "Aviso prévio de eventual comunicação sigilosa compromete o controle e pode configurar divulgação indevida."
+            },
+            {
+              "text": "Enviar por mensagem particular um relatório interno para que o acompanhante possa conferir.",
+              "isBest": false,
+              "feedback": "Relatórios internos não devem ser repassados a terceiros sem fundamento e autorização cabíveis."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Difícil",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-028"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.2",
+      "topic": "Adequação sem promessa de recuperação",
+      "pd_verified": true,
+      "title": "Pressa para recuperar uma perda",
+      "intro": "Eduardo sofreu uma perda de R$ 8.000 e quer recuperá-la em dois meses. Ele precisará do dinheiro para despesas previsíveis e demonstra ansiedade com o resultado.",
+      "steps": [
+        {
+          "situation": "Eduardo pede o produto de maior retorno esperado da plataforma.",
+          "prompt": "Qual deve ser a primeira abordagem?",
+          "options": [
+            {
+              "text": "Acolher a preocupação e levantar prazo, necessidade de caixa e capacidade de suportar nova perda antes de qualquer recomendação.",
+              "isBest": true,
+              "feedback": "O atendimento precisa separar a reação à perda da situação financeira e da adequação de uma nova decisão."
+            },
+            {
+              "text": "Usar a perda como justificativa para dispensar suitability e priorizar o retorno potencial.",
+              "isBest": false,
+              "feedback": "A ocorrência de perda não elimina a exigência de adequação nem transforma risco em solução garantida."
+            },
+            {
+              "text": "Prometer recuperação em dois meses desde que ele aceite uma carteira mais volátil.",
+              "isBest": false,
+              "feedback": "Volatilidade não assegura recuperação em prazo definido. Prometer esse resultado seria enganoso."
+            }
+          ]
+        },
+        {
+          "situation": "A análise mostra que uma nova perda impediria o pagamento de despesas essenciais.",
+          "prompt": "Qual orientação é compatível com essa capacidade financeira?",
+          "options": [
+            {
+              "text": "Priorizar os compromissos e a liquidez necessária, explicando que buscar recuperação rápida pode ampliar a perda.",
+              "isBest": true,
+              "feedback": "O risco de comprometer despesas essenciais limita a capacidade de assumir nova exposição para perseguir um resultado de curto prazo."
+            },
+            {
+              "text": "Contratar crédito para aumentar a aplicação de risco e reduzir o tempo de recuperação esperado.",
+              "isBest": false,
+              "feedback": "A alavancagem acrescenta custo e potencial de perda, especialmente grave quando faltaria dinheiro para necessidades essenciais."
+            },
+            {
+              "text": "Considerar apenas que ele se declarou corajoso, ignorando a impossibilidade de absorver uma perda.",
+              "isBest": false,
+              "feedback": "Tolerância declarada e capacidade financeira são dimensões distintas; ambas importam."
+            }
+          ]
+        },
+        {
+          "situation": "Eduardo compreende que a recomposição pode exigir mais tempo e aportes.",
+          "prompt": "Como encerrar o atendimento?",
+          "options": [
+            {
+              "text": "Construir um plano realista, registrar limites e reavaliar periodicamente, sem garantir prazo de recuperação.",
+              "isBest": true,
+              "feedback": "Um plano sustentável combina orçamento, objetivos e adequação. O registro e o acompanhamento ajudam a evitar decisões impulsivas."
+            },
+            {
+              "text": "Definir um retorno fixo necessário e apresentá-lo como rendimento contratualmente assegurado.",
+              "isBest": false,
+              "feedback": "Uma meta financeira não cria garantia de mercado ou obrigação de resultado inexistente."
+            },
+            {
+              "text": "Recomendar operações sucessivas até o saldo voltar ao valor anterior, independentemente dos custos.",
+              "isBest": false,
+              "feedback": "Giro excessivo pode ampliar despesas e risco e não assegura recuperação."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-029"
+    },
+    {
+      "theme": "Relacionamento com o cliente",
+      "pd": "3.4.3.1.3",
+      "topic": "Reclamação e rastreabilidade do atendimento",
+      "pd_verified": true,
+      "title": "Contestação sobre prazo de disponibilidade",
+      "intro": "Sônia reclama que não recebeu o dinheiro de um resgate na data esperada. Ela afirma ter entendido que o pagamento seria imediato. O profissional ainda não verificou os registros.",
+      "steps": [
+        {
+          "situation": "Sônia está irritada e pede solução urgente.",
+          "prompt": "Qual deve ser a primeira ação?",
+          "options": [
+            {
+              "text": "Ouvir o relato, identificar a operação e verificar pedido, horário e regras de cotização e pagamento, sem prometer o que não foi confirmado.",
+              "isBest": true,
+              "feedback": "Acolher e verificar dados permite distinguir erro operacional, informação inadequada ou expectativa diferente das condições contratadas."
+            },
+            {
+              "text": "Concluir que ela interpretou mal e encerrar a reclamação sem examinar os documentos.",
+              "isBest": false,
+              "feedback": "Não se deve atribuir culpa antes de apurar os fatos nem recusar o tratamento da reclamação."
+            },
+            {
+              "text": "Prometer crédito imediato por conta da instituição, mesmo sem autorização ou apuração.",
+              "isBest": false,
+              "feedback": "Uma promessa sem fundamento pode agravar o problema e não substitui a análise e o fluxo competente."
+            }
+          ]
+        },
+        {
+          "situation": "A verificação identifica falha no encaminhamento do pedido dentro do processo interno.",
+          "prompt": "Qual é a conduta mais adequada?",
+          "options": [
+            {
+              "text": "Registrar a falha, acionar o responsável pela correção e informar à cliente um prazo de retorno verificável.",
+              "isBest": true,
+              "feedback": "O atendimento deve dar encaminhamento rastreável e comunicar o que é conhecido, com prazo de acompanhamento."
+            },
+            {
+              "text": "Alterar retroativamente o registro para que pareça que a cliente solicitou depois.",
+              "isBest": false,
+              "feedback": "Modificar registros para esconder falha viola a integridade do atendimento e prejudica a apuração."
+            },
+            {
+              "text": "Atribuir a falha a um parceiro sem confirmar sua participação e aguardar sem protocolo.",
+              "isBest": false,
+              "feedback": "A responsabilização deve ser apurada. A cliente precisa de encaminhamento e possibilidade de acompanhar a demanda."
+            }
+          ]
+        },
+        {
+          "situation": "Sônia pede cópia do protocolo e quer saber qual canal usar se a solução não vier.",
+          "prompt": "Como concluir?",
+          "options": [
+            {
+              "text": "Fornecer protocolo, condições de acompanhamento e canais formais de reclamação e escalonamento aplicáveis.",
+              "isBest": true,
+              "feedback": "Rastreabilidade e canais de recurso permitem acompanhar a solução e buscar revisão pelos meios adequados."
+            },
+            {
+              "text": "Condicionar o protocolo à contratação de um novo produto para manter o relacionamento.",
+              "isBest": false,
+              "feedback": "O tratamento da reclamação não deve ser condicionado a nova contratação comercial."
+            },
+            {
+              "text": "Pedir que ela retire a reclamação antes de informar o prazo de resposta.",
+              "isBest": false,
+              "feedback": "A informação e o encaminhamento não dependem da desistência da reclamação."
+            }
+          ]
+        }
+      ],
+      "difficulty": "Médio",
+      "origin": "Autoral · Banco C",
+      "references": [
+        "https://www.anbima.com.br/data/files/6A/52/6F/A1/BED73910B07B2739B82BA2A8/Programa-Detalhado-CPA-ANBIMA.pdf",
+        "https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf"
+      ],
+      "bank_id": "AD-030"
     }
   ]
 }
